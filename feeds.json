@@ -8,7 +8,6 @@
   {"name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "lang": "en", "filter": false},
   {"name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/", "lang": "en", "filter": true},
   {"name": "Hacker News (AI検索)", "url": "https://hnrss.org/newest?q=AI+OR+LLM&points=50", "lang": "en", "filter": false},
-  {"name": "Anthropic News", "url": "https://www.anthropic.com/rss.xml", "lang": "en", "filter": false},
   {"name": "OpenAI Blog", "url": "https://openai.com/news/rss.xml", "lang": "en", "filter": false},
   {"name": "Google AI Blog", "url": "https://blog.google/technology/ai/rss/", "lang": "en", "filter": false},
   {"name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "lang": "en", "filter": false}

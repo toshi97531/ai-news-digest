@@ -42,7 +42,6 @@ DEFAULT_FEEDS = [
     {"name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "lang": "en", "filter": False},
     {"name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/", "lang": "en", "filter": True},
     {"name": "Hacker News (AI検索)", "url": "https://hnrss.org/newest?q=AI+OR+LLM&points=50", "lang": "en", "filter": False},
-    {"name": "Anthropic News", "url": "https://www.anthropic.com/rss.xml", "lang": "en", "filter": False},
     {"name": "OpenAI Blog", "url": "https://openai.com/news/rss.xml", "lang": "en", "filter": False},
     {"name": "Google AI Blog", "url": "https://blog.google/technology/ai/rss/", "lang": "en", "filter": False},
     {"name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "lang": "en", "filter": False},
