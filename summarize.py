@@ -21,7 +21,7 @@ import re
 import sys
 from pathlib import Path
 
-CLAUDE_MODEL = os.environ.get("SUMMARY_MODEL", "claude-opus-5-5")
+CLAUDE_MODEL = os.environ.get("SUMMARY_MODEL") or "claude-opus-5-5"
 MAX_ITEMS = 100
 
 SYSTEM = """あなたはAI業界を専門とするテクノロジー記者です。
