@@ -13,6 +13,7 @@ python3 ai_news.py --hours 72     # 直近72時間分
 python3 ai_news.py --keywords "Claude,GPT,Gemini"   # フィルタ語を変更
 python3 ai_news.py --feeds feeds.json               # フィード一覧を差し替え
 python3 ai_news.py --no-translate                   # 英語記事を翻訳しない
+python3 ai_news.py --no-images                      # 記事ページからの画像取得をしない
 ```
 
 出力先 (`--out` で変更可):
@@ -24,6 +25,7 @@ python3 ai_news.py --no-translate                   # 英語記事を翻訳し�
 | `docs/digest-YYYY-MM-DD.md` | Markdown版 (Obsidian / Notion などに貼る用) |
 | `docs/digest-YYYY-MM-DD.json` | 他ツール連携用の生データ |
 | `docs/translations.json` | 英語記事の翻訳キャッシュ (自動生成) |
+| `docs/images.json` | アイキャッチ画像URLのキャッシュ (自動生成) |
 
 ## フィードの追加・変更
 
@@ -52,8 +54,9 @@ python3 ai_news.py --no-translate                   # 英語記事を翻訳し�
 ## 仕組み
 
 1. 各フィードを並列で取得 (標準ライブラリ `urllib` + `xml.etree`)
-2. 英語記事のタイトルと要約を日本語に翻訳 (Google翻訳の無料エンドポイント、結果はキャッシュ)
-3. 指定時間より古い記事と、`filter: true` のソースでキーワードに当たらない記事を除外
-4. URL・タイトルで重複を除去し、新しい順に並べて出力
+2. アイキャッチ画像をフィード (media:thumbnail, enclosure, 本文内img) から取得し、無ければ記事ページの og:image を取得
+3. 英語記事のタイトルと要約を日本語に翻訳 (Google翻訳の無料エンドポイント、結果はキャッシュ)
+4. 指定時間より古い記事と、`filter: true` のソースでキーワードに当たらない記事を除外
+5. URL・タイトルで重複を除去し、新しい順に並べて出力
 
 取得に失敗したフィードはエラーとして末尾に表示され、他のフィードの処理は続行します。

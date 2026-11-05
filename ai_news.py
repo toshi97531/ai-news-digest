@@ -58,7 +58,8 @@ DEFAULT_KEYWORDS = [
 
 USER_AGENT = "Mozilla/5.0 (compatible; ai-news-digest/1.0)"
 NS = {"atom": "http://www.w3.org/2005/Atom", "dc": "http://purl.org/dc/elements/1.1/",
-      "content": "http://purl.org/rss/1.0/modules/content/", "rss1": "http://purl.org/rss/1.0/"}
+      "content": "http://purl.org/rss/1.0/modules/content/", "rss1": "http://purl.org/rss/1.0/",
+      "media": "http://search.yahoo.com/mrss/"}
 
 
 # ---------------------------------------------------------------------------
@@ -76,6 +77,80 @@ def strip_tags(s: str | None) -> str:
     s = re.sub(r"<[^>]+>", " ", s)
     s = html.unescape(s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+IMG_RE = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.IGNORECASE)
+OG_RE = re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)(?::secure_url)?["\'][^>]+content=["\']([^"\']+)["\']'
+                   r'|<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\']', re.IGNORECASE)
+
+
+def feed_image(el, *raw_html: str | None) -> str:
+    """フィード項目から画像URLを探す (media:*, enclosure, 本文内の img)。"""
+    for tag in ("media:thumbnail", "media:content"):
+        for m in el.findall(tag, NS):
+            url = m.get("url", "")
+            if url and (m.get("medium") in (None, "image")) and not m.get("type", "image").startswith("video"):
+                return url
+    for m in el.findall("media:group/media:thumbnail", NS) + el.findall("media:group/media:content", NS):
+        if m.get("url"):
+            return m.get("url")
+    for enc in el.findall("enclosure"):
+        if enc.get("type", "").startswith("image") and enc.get("url"):
+            return enc.get("url")
+    for h in raw_html:
+        if h:
+            m = IMG_RE.search(h)
+            if m and not m.group(1).startswith("data:"):
+                return html.unescape(m.group(1))
+    return ""
+
+
+def page_image(url: str) -> str | None:
+    """記事ページの og:image を取得する。失敗時は None。"""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            if "html" not in r.headers.get("Content-Type", "html"):
+                return ""
+            head = r.read(120_000).decode("utf-8", "ignore")
+        m = OG_RE.search(head)
+        if not m:
+            return ""
+        img = html.unescape(m.group(1) or m.group(2) or "")
+        return urllib.parse.urljoin(url, img) if img else ""
+    except Exception:
+        return None
+
+
+def fill_images(items: list[dict], cache_path: Path, limit: int = 120) -> int:
+    """画像のない記事について記事ページから og:image を取得する。"""
+    try:
+        cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    except Exception:
+        cache = {}
+    todo = []
+    for it in items:
+        if it.get("image"):
+            continue
+        if it["link"] in cache:
+            it["image"] = cache[it["link"]]
+        elif len(todo) < limit:
+            todo.append(it)
+    done = 0
+    with cf.ThreadPoolExecutor(max_workers=8) as ex:
+        for it, img in zip(todo, ex.map(lambda i: page_image(i["link"]), todo)):
+            if img is None:
+                continue
+            it["image"] = img
+            cache[it["link"]] = img
+            done += 1
+    try:
+        if len(cache) > 3000:
+            cache = dict(list(cache.items())[-2000:])
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass
+    return done
 
 
 def parse_date(s: str | None) -> dt.datetime | None:
@@ -124,6 +199,7 @@ def parse_feed(data: bytes) -> list[dict]:
                 "link": link.strip(),
                 "summary": strip_tags(_text(e, "atom:summary", "atom:content")),
                 "date": parse_date(_text(e, "atom:published", "atom:updated")),
+                "image": feed_image(e, _text(e, "atom:content"), _text(e, "atom:summary")),
             })
     elif tag.endswith("rdf"):  # RSS 1.0
         for e in root.findall("rss1:item", NS):
@@ -132,6 +208,7 @@ def parse_feed(data: bytes) -> list[dict]:
                 "link": (_text(e, "rss1:link") or "").strip(),
                 "summary": strip_tags(_text(e, "rss1:description", "content:encoded")),
                 "date": parse_date(_text(e, "dc:date")),
+                "image": feed_image(e, _text(e, "content:encoded"), _text(e, "rss1:description")),
             })
     else:  # RSS 2.0
         for e in root.iter("item"):
@@ -140,6 +217,7 @@ def parse_feed(data: bytes) -> list[dict]:
                 "link": (_text(e, "link") or "").strip(),
                 "summary": strip_tags(_text(e, "description", "content:encoded")),
                 "date": parse_date(_text(e, "pubDate", "dc:date")),
+                "image": feed_image(e, _text(e, "content:encoded"), _text(e, "description")),
             })
     return [i for i in items if i["title"] and i["link"]]
 
@@ -274,7 +352,10 @@ h1{{margin:0;font-size:20px}} .meta{{color:var(--muted);font-size:13px;margin-to
 .tools{{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}}
 input,select{{padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font-size:14px}}
 main{{max-width:960px;margin:0 auto;padding:16px 24px}}
-.item{{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0}}
+.item{{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0;display:flex;gap:14px;align-items:flex-start}}
+.item .body{{flex:1;min-width:0}}
+.thumb{{flex:0 0 120px;width:120px;height:80px;border-radius:6px;object-fit:cover;background:var(--line)}}
+@media(max-width:600px){{.thumb{{flex-basis:88px;width:88px;height:64px}}}}
 .item a{{color:var(--acc);text-decoration:none;font-weight:600;font-size:15px}} .item a:hover{{text-decoration:underline}}
 .src{{font-size:12px;color:var(--muted);margin-top:4px}} .sum{{font-size:13px;color:var(--muted);margin-top:6px}}
 .orig{{font-size:12px;color:var(--muted);margin-top:2px}} .hidden{{display:none}} footer{{color:var(--muted);font-size:12px;padding:16px 24px}}
@@ -301,10 +382,11 @@ def render_html(items: list[dict], errors, now, hours, tz) -> str:
     for it in items:
         rows.append(
             f'<div class="item" data-src="{e(it["source"])}" data-lang="{e(it["lang"])}">'
-            f'<a href="{e(it["link"])}" target="_blank" rel="noopener">{e(it.get("title_ja") or it["title"])}</a>'
+            + (f'<a href="{e(it["link"])}" target="_blank" rel="noopener"><img class="thumb" src="{e(it["image"])}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"></a>' if it.get("image") else "")
+            + f'<div class="body"><a href="{e(it["link"])}" target="_blank" rel="noopener">{e(it.get("title_ja") or it["title"])}</a>'
             + (f'<div class="orig">{e(it["title"])}</div>' if it.get("title_ja") else "")
             + f'<div class="src"><span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
-            + (f'<div class="sum">{e(it.get("summary_ja") or it["summary"])}</div>' if it["summary"] else "") + "</div>")
+            + (f'<div class="sum">{e(it.get("summary_ja") or it["summary"])}</div>' if it["summary"] else "") + "</div></div>")
     err_html = ("取得失敗: " + " / ".join(f"{e(n)} ({e(m)})" for n, m in errors)) if errors else ""
     return HTML_TMPL.format(date=f"{now.astimezone(tz):%Y-%m-%d %H:%M}", hours=hours, n=len(items),
                             src_opts="".join(f'<option>{e(s)}</option>' for s in srcs),
@@ -321,6 +403,7 @@ def main(argv=None) -> int:
     p.add_argument("--max-per-source", type=int, default=15, help="ソースごとの最大件数")
     p.add_argument("--open", action="store_true", help="生成後にHTMLをブラウザで開く")
     p.add_argument("--no-translate", action="store_true", help="英語記事の日本語翻訳をしない")
+    p.add_argument("--no-images", action="store_true", help="記事ページからのアイキャッチ画像取得をしない")
     p.add_argument("--quiet", action="store_true")
     a = p.parse_args(argv)
 
@@ -352,6 +435,10 @@ def main(argv=None) -> int:
 
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
+    if not a.no_images:
+        n = fill_images(items, out / "images.json")
+        if not a.quiet:
+            print(f"  画像: {n}件 (記事ページから取得)", file=sys.stderr)
     if not a.no_translate:
         n = translate_items(items, out / "translations.json")
         if not a.quiet:
