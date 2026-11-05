@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -93,28 +94,56 @@ def summarize_with_claude(prompt: str) -> tuple[str, str] | None:
     return (text, f"Claude ({resp.model})") if text else None
 
 
+GITHUB_CANDIDATES = [GITHUB_MODEL, "openai/gpt-4.1-mini", "openai/gpt-4o-mini", "openai/gpt-4.1", "openai/gpt-4o",
+                     "meta/Llama-4-Scout-17B-16E-Instruct", "mistral-ai/mistral-small-2503"]
+
+
+def _gh_request(url: str, token: str, body: bytes | None = None) -> tuple[int, str]:
+    req = urllib.request.Request(
+        url, data=body, method="POST" if body else "GET",
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+                 "Accept": "application/json", "X-GitHub-Api-Version": "2022-11-28",
+                 "User-Agent": "ai-news-digest/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=180) as r:
+            return r.status, r.read().decode("utf-8", "ignore")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", "ignore")
+
+
 def summarize_with_github_models(prompt: str) -> tuple[str, str] | None:
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         return None
-    body = json.dumps({
-        "model": GITHUB_MODEL,
-        "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
-        "max_tokens": 4000,
-    }).encode()
-    req = urllib.request.Request(
-        "https://models.github.ai/inference/chat/completions", data=body, method="POST",
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                 "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
+    # 利用可能なモデル一覧を取得し、候補のうち存在するものを順に試す
+    available: list[str] = []
+    status, text = _gh_request("https://models.github.ai/catalog/models", token)
     try:
-        with urllib.request.urlopen(req, timeout=180) as r:
-            data = json.loads(r.read().decode("utf-8"))
-        text = data["choices"][0]["message"]["content"].strip()
-        return (text, f"GitHub Models ({GITHUB_MODEL})") if text else None
-    except Exception as e:
-        detail = getattr(e, "read", lambda: b"")()[:300] if hasattr(e, "read") else ""
-        print(f"  ! GitHub Models エラー: {e} {detail}", file=sys.stderr)
-        return None
+        available = [m.get("id", "") for m in json.loads(text)]
+        print(f"  GitHub Models カタログ: {len(available)}件 (例: {', '.join(available[:6])})", file=sys.stderr)
+    except Exception:
+        print(f"  ! GitHub Models カタログ取得失敗: HTTP {status}: {text[:300]!r}", file=sys.stderr)
+    candidates = [m for m in GITHUB_CANDIDATES if not available or m in available]
+    if available and not candidates:
+        candidates = [m for m in available if "gpt" in m.lower()][:2] or available[:1]
+    for model in dict.fromkeys(candidates):
+        body = json.dumps({
+            "model": model,
+            "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
+            "max_tokens": 4000,
+        }).encode()
+        status, text = _gh_request("https://models.github.ai/inference/chat/completions", token, body)
+        try:
+            data = json.loads(text)
+            out = data["choices"][0]["message"]["content"].strip()
+            if out:
+                return out, f"GitHub Models ({model})"
+            print(f"  ! GitHub Models ({model}) 応答が空: {text[:300]!r}", file=sys.stderr)
+        except Exception as e:
+            print(f"  ! GitHub Models ({model}) エラー: HTTP {status} {e}: {text[:300]!r}", file=sys.stderr)
+            if status in (401, 403):
+                break
+    return None
 
 
 # ---------------------------------------------------------------------------
