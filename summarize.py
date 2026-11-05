@@ -2,10 +2,8 @@
 """
 summarize.py - ai_news.py が出力した当日のJSONを読み、「今日のAI動向まとめ」ページを生成する。
 
-生成エンジン (上から順に試す):
-  1. Claude (環境変数 ANTHROPIC_API_KEY があるとき。anthropic SDK が必要: pip install anthropic)
-  2. GitHub Models (環境変数 GITHUB_TOKEN があるとき。GitHub Actions 内なら追加設定不要・無料)
-どちらも使えない / 失敗した場合は、見出し一覧だけのページを出力して終了する (exit 0)。
+生成には Claude を使う (環境変数 ANTHROPIC_API_KEY と anthropic SDK が必要: pip install anthropic)。
+キーが無い / 失敗した場合は、見出し一覧だけのページを出力して終了する (exit 0)。
 
 使い方:
     python3 summarize.py                 # docs/digest-<今日>.json を読んで docs/summary.html を出力
@@ -21,12 +19,9 @@ import json
 import os
 import re
 import sys
-import urllib.error
-import urllib.request
 from pathlib import Path
 
 CLAUDE_MODEL = os.environ.get("SUMMARY_MODEL", "claude-opus-5-5")
-GITHUB_MODEL = os.environ.get("SUMMARY_FALLBACK_MODEL", "openai/gpt-4.1-mini")
 MAX_ITEMS = 100
 
 SYSTEM = """あなたはAI業界を専門とするテクノロジー記者です。
@@ -92,58 +87,6 @@ def summarize_with_claude(prompt: str) -> tuple[str, str] | None:
         return None
     text = "".join(b.text for b in resp.content if b.type == "text").strip()
     return (text, f"Claude ({resp.model})") if text else None
-
-
-GITHUB_CANDIDATES = [GITHUB_MODEL, "openai/gpt-4.1-mini", "openai/gpt-4o-mini", "openai/gpt-4.1", "openai/gpt-4o",
-                     "meta/Llama-4-Scout-17B-16E-Instruct", "mistral-ai/mistral-small-2503"]
-
-
-def _gh_request(url: str, token: str, body: bytes | None = None) -> tuple[int, str]:
-    req = urllib.request.Request(
-        url, data=body, method="POST" if body else "GET",
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                 "Accept": "application/json", "X-GitHub-Api-Version": "2022-11-28",
-                 "User-Agent": "ai-news-digest/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=180) as r:
-            return r.status, r.read().decode("utf-8", "ignore")
-    except urllib.error.HTTPError as e:
-        return e.code, e.read().decode("utf-8", "ignore")
-
-
-def summarize_with_github_models(prompt: str) -> tuple[str, str] | None:
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
-        return None
-    # 利用可能なモデル一覧を取得し、候補のうち存在するものを順に試す
-    available: list[str] = []
-    status, text = _gh_request("https://models.github.ai/catalog/models", token)
-    try:
-        available = [m.get("id", "") for m in json.loads(text)]
-        print(f"  GitHub Models カタログ: {len(available)}件 (例: {', '.join(available[:6])})", file=sys.stderr)
-    except Exception:
-        print(f"  ! GitHub Models カタログ取得失敗: HTTP {status}: {text[:300]!r}", file=sys.stderr)
-    candidates = [m for m in GITHUB_CANDIDATES if not available or m in available]
-    if available and not candidates:
-        candidates = [m for m in available if "gpt" in m.lower()][:2] or available[:1]
-    for model in dict.fromkeys(candidates):
-        body = json.dumps({
-            "model": model,
-            "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
-            "max_tokens": 4000,
-        }).encode()
-        status, text = _gh_request("https://models.github.ai/inference/chat/completions", token, body)
-        try:
-            data = json.loads(text)
-            out = data["choices"][0]["message"]["content"].strip()
-            if out:
-                return out, f"GitHub Models ({model})"
-            print(f"  ! GitHub Models ({model}) 応答が空: {text[:300]!r}", file=sys.stderr)
-        except Exception as e:
-            print(f"  ! GitHub Models ({model}) エラー: HTTP {status} {e}: {text[:300]!r}", file=sys.stderr)
-            if status in (401, 403):
-                break
-    return None
 
 
 # ---------------------------------------------------------------------------
@@ -229,7 +172,7 @@ def render_page(md: str | None, items: list[dict], date_str: str, engine: str, a
     if md:
         body = md_to_html(md, items)
     else:
-        body = "<p>本日のまとめは生成できませんでした（要約エンジンが利用できません）。以下の記事一覧をご覧ください。</p>"
+        body = "<p>本日のまとめは生成できませんでした（Claude APIキーが未設定、または生成に失敗）。以下の記事一覧をご覧ください。</p>"
     refs = "".join(
         f'<li><a href="{html.escape(it["link"])}" target="_blank" rel="noopener">{html.escape(it.get("title_ja") or it["title"])}</a>'
         f' <span>({html.escape(it["source"])})</span></li>' for it in items)
@@ -253,11 +196,11 @@ def main(argv=None) -> int:
     prompt = build_prompt(items, date_str)
 
     md, engine = None, "なし"
-    for fn in (summarize_with_claude, summarize_with_github_models):
-        res = fn(prompt)
-        if res:
-            md, engine = res
-            break
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        print("  ! ANTHROPIC_API_KEY が未設定のため、まとめは生成しません", file=sys.stderr)
+    res = summarize_with_claude(prompt)
+    if res:
+        md, engine = res
     if md:
         (out / f"summary-{date_str}.md").write_text(md, encoding="utf-8")
         print(f"  ✓ まとめ生成: {engine}", file=sys.stderr)

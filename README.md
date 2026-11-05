@@ -38,13 +38,16 @@ pip install anthropic                       # Claude を使う場合のみ
 ANTHROPIC_API_KEY=sk-ant-... python3 summarize.py
 ```
 
-生成エンジンは上から順に試します:
+生成には Claude API を使います。モデルは既定で `claude-opus-5-5`、環境変数 `SUMMARY_MODEL` で変更できます (例: `claude-haiku-5-5` にするとさらに安価)。
+キーが無い場合は見出し一覧だけのページを出します。
 
-1. **Claude** (`ANTHROPIC_API_KEY` がある場合)。モデルは既定で `claude-opus-5-5`、環境変数 `SUMMARY_MODEL` で変更可 (例: `claude-haiku-5-5` で安価に)。
-2. **GitHub Models** (`GITHUB_TOKEN` がある場合)。GitHub Actions 内では追加設定なしで使え、無料。モデルは `SUMMARY_FALLBACK_MODEL` で変更可。
+GitHub Actions で動かすには:
 
-どちらも使えない場合は見出し一覧だけのページを出します。
-GitHub Actions で Claude を使うには、リポジトリの Settings → Secrets and variables → Actions に `ANTHROPIC_API_KEY` を登録してください。
+1. https://platform.claude.com/ でAPIキーを作成
+2. リポジトリの Settings → Secrets and variables → Actions → **New repository secret** で、Name を `ANTHROPIC_API_KEY` にして登録
+3. (任意) 同じ画面の **Variables** タブで `SUMMARY_MODEL` を登録するとモデルを変更できる
+
+費用の目安: 1日1回、記事約90本を入力して日本語のまとめを出力する場合、`claude-opus-5-5` で1回あたり約0.1ドル前後、`claude-haiku-5-5` なら約0.005ドル前後です。
 
 ## フィードの追加・変更
 

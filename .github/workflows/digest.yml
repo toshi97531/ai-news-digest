@@ -5,7 +5,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  models: read
   pages: write
   id-token: write
 jobs:
@@ -20,7 +19,6 @@ jobs:
       - name: Generate daily summary
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
         run: python3 summarize.py --out docs || true
       - name: Commit digest
