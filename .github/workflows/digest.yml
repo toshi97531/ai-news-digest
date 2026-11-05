@@ -1,0 +1,33 @@
+name: AI News Digest
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 毎日 07:00 JST
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python3 ai_news.py --hours 24 --out docs --quiet || true
+      - name: Commit digest
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add docs
+          git diff --cached --quiet || git commit -m "digest: $(date -u +%F)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: docs }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages }
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

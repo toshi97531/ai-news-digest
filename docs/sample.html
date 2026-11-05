@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIニュースダイジェスト 2026-11-05 03:14</title>
+<style>
+:root{--bg:#fafafa;--fg:#1a1a1a;--muted:#6b6b6b;--card:#fff;--line:#e4e4e4;--acc:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#111;--fg:#eee;--muted:#9a9a9a;--card:#1b1b1b;--line:#2c2c2c;--acc:#7aa2ff}}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--fg);line-height:1.55}
+header{padding:20px 24px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:1}
+h1{margin:0;font-size:20px} .meta{color:var(--muted);font-size:13px;margin-top:4px}
+.tools{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+input,select{padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font-size:14px}
+main{max-width:960px;margin:0 auto;padding:16px 24px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0}
+.item a{color:var(--acc);text-decoration:none;font-weight:600;font-size:15px} .item a:hover{text-decoration:underline}
+.src{font-size:12px;color:var(--muted);margin-top:4px} .sum{font-size:13px;color:var(--muted);margin-top:6px}
+.hidden{display:none} footer{color:var(--muted);font-size:12px;padding:16px 24px}
+.badge{display:inline-block;padding:1px 6px;border-radius:4px;background:var(--line);margin-right:6px}
+</style></head><body>
+<header><h1>AIニュースダイジェスト</h1>
+<div class="meta">2026-11-05 03:14 生成 / 直近24時間 / <span id="count">2</span>件</div>
+<div class="tools"><input id="q" placeholder="キーワードで絞り込み" oninput="f()">
+<select id="src" onchange="f()"><option value="">すべてのソース</option><option>Atomテスト</option><option>RSSテスト</option></select>
+<select id="lang" onchange="f()"><option value="">日本語+英語</option><option value="ja">日本語</option><option value="en">英語</option></select></div>
+</header><main id="list"><div class="item" data-src="RSSテスト" data-lang="ja"><a href="https://example.com/a?utm=1" target="_blank" rel="noopener">Anthropic、新モデル&amp;Claudeを発表</a><div class="src"><span class="badge">ja</span>RSSテスト · 11/05 03:14</div><div class="sum">生成AIの新しいモデル</div></div>
+<div class="item" data-src="Atomテスト" data-lang="en"><a href="https://example.com/c" target="_blank" rel="noopener">OpenAI releases GPT update</a><div class="src"><span class="badge">en</span>Atomテスト · 11/05 03:14</div><div class="sum">LLM news</div></div></main>
+<footer>取得失敗: 失敗テスト (URLError: &lt;urlopen error [Errno 2] No such file or directory: &#x27;/nonexistent.xml&#x27;&gt;)</footer>
+<script>
+function f(){const q=document.getElementById('q').value.toLowerCase(),s=document.getElementById('src').value,l=document.getElementById('lang').value;let n=0;
+for(const el of document.querySelectorAll('.item')){const ok=(!q||el.textContent.toLowerCase().includes(q))&&(!s||el.dataset.src===s)&&(!l||el.dataset.lang===l);el.classList.toggle('hidden',!ok);if(ok)n++}
+document.getElementById('count').textContent=n}
+</script></body></html>
