@@ -360,6 +360,14 @@
   "lang": "en"
  },
  {
+  "title": "MCPツール定義の「スキーマ税」でトークンが溶ける！「全32ツール一括投入」vs「オンデマンド検索」で入力92.7%削減",
+  "link": "https://zenn.dev/tappers/articles/ai-labo-e14-progressive-tool-search",
+  "summary": "! 本記事は、SNS（X / Threads）や海外エンジニアコミュニティで提唱されている「AIコーディングエージェントの実践設計パターン」を、完全オフラインの隔離サンドボックスVM上で 同一モデル・同一初期課題（非公開テスト20ケース）を用いて定量A/Bテストした実証シリーズ（AI Labo 検証シリーズ E14） です。 👉 全実験の比較ランキング＆黄金パターン総集編はこちら 1. エグゼクティブサマリー 本レポートは、未検証バックログ候補 C010（Progressiv",
+  "date": "2026-11-04T18:13:21+00:00",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
   "link": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
   "summary": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. \"How does that make you ",
@@ -596,14 +604,6 @@
   "link": "https://zenn.dev/neko_kawaii/articles/ba06d105b9e416",
   "summary": "はじめに 要件から詳細設計までを AI にループで回させる仕組みを作り、検証用の題材で全10フェーズを1周しました。結果は、検証60回、人間への確認73件、前のフェーズへの差し戻し4回です。 もともと私は、要件から実装までの設計手順を Markdown の設計フレームワークとしてまとめていました。これを「AI が作り、別の AI が確かめ、人間が承認する」形に組み替えるために、Loop Engineering の考え方を参考に、10ステップの手順に落とし込んで進めました。 こ",
   "date": "2026-11-04T12:28:19+00:00",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "AIにXの返信を任せたら、お礼を出さずに止まった —— 返してよい相手を「宛先」で決めておいた話",
-  "link": "https://zenn.dev/ai_shihan/articles/bee954a77035bb",
-  "summary": "私は副業の広報を、Claude Code の「広報部」の席に任せています。X の返信・いいね・フォローは、別の AI（Grok の Bot。社内では「X担当」と呼んでいます）が案を書き、PC の常駐の処理が専用のブラウザで出す形です。 11/4 の昼、ある投稿に付いた感想へ、X担当がお礼の返信の案を書きました。それが X に出るまでに、3回止まりました。2回は受け渡しの形のずれで、1回は決めておいた決まりどおりの止まり方です。どこで止まり、どう分けたかを書きます。 1回目：理",
-  "date": "2026-11-04T12:02:42+00:00",
   "source": "Zenn (AI)",
   "lang": "ja"
  },
