@@ -22,6 +22,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 import webbrowser
 import xml.etree.ElementTree as ET
@@ -179,6 +180,59 @@ def dedupe(items: list[dict]) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# 翻訳 (英語 -> 日本語)。APIキー不要のGoogle翻訳エンドポイントを利用し、結果をキャッシュする
+# ---------------------------------------------------------------------------
+TRANSLATE_URL = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ja&dt=t&q="
+
+
+def translate_text(text: str) -> str | None:
+    if not text.strip():
+        return ""
+    try:
+        raw = fetch(TRANSLATE_URL + urllib.parse.quote(text), timeout=15)
+        data = json.loads(raw.decode("utf-8"))
+        return "".join(seg[0] for seg in data[0] if seg and seg[0]).strip()
+    except Exception:
+        return None
+
+
+def translate_items(items: list[dict], cache_path: Path) -> int:
+    """lang が ja 以外の記事に title_ja / summary_ja を付ける。翻訳できた件数を返す。"""
+    try:
+        cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    except Exception:
+        cache = {}
+    todo: list[tuple[dict, str, str]] = []
+    for it in items:
+        if it.get("lang") == "ja":
+            continue
+        for field in ("title", "summary"):
+            src = it.get(field, "")
+            if not src:
+                continue
+            if src in cache:
+                it[field + "_ja"] = cache[src]
+            else:
+                todo.append((it, field, src))
+
+    done = 0
+    with cf.ThreadPoolExecutor(max_workers=4) as ex:
+        for (it, field, src), ja in zip(todo, ex.map(lambda t: translate_text(t[2]), todo)):
+            if ja:
+                it[field + "_ja"] = ja
+                cache[src] = ja
+                done += 1
+    try:
+        # キャッシュが肥大化しないよう直近の分だけ保持
+        if len(cache) > 3000:
+            cache = dict(list(cache.items())[-2000:])
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass
+    return done
+
+
+# ---------------------------------------------------------------------------
 # 出力
 # ---------------------------------------------------------------------------
 def fmt_date(d: dt.datetime | None, tz: dt.tzinfo) -> str:
@@ -194,9 +248,13 @@ def render_markdown(items: list[dict], errors: list[tuple[str, str]], now: dt.da
     for src, its in by_src.items():
         lines.append(f"## {src} ({len(its)})")
         for it in its:
-            lines.append(f"- [{it['title']}]({it['link']}) `{fmt_date(it['date'], tz)}`")
-            if it["summary"]:
-                lines.append(f"  - {it['summary']}")
+            title = it.get("title_ja") or it["title"]
+            lines.append(f"- [{title}]({it['link']}) `{fmt_date(it['date'], tz)}`")
+            if it.get("title_ja"):
+                lines.append(f"  - 原題: {it['title']}")
+            summary = it.get("summary_ja") or it["summary"]
+            if summary:
+                lines.append(f"  - {summary}")
         lines.append("")
     if errors:
         lines.append("## 取得失敗")
@@ -219,7 +277,7 @@ main{{max-width:960px;margin:0 auto;padding:16px 24px}}
 .item{{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0}}
 .item a{{color:var(--acc);text-decoration:none;font-weight:600;font-size:15px}} .item a:hover{{text-decoration:underline}}
 .src{{font-size:12px;color:var(--muted);margin-top:4px}} .sum{{font-size:13px;color:var(--muted);margin-top:6px}}
-.hidden{{display:none}} footer{{color:var(--muted);font-size:12px;padding:16px 24px}}
+.orig{{font-size:12px;color:var(--muted);margin-top:2px}} .hidden{{display:none}} footer{{color:var(--muted);font-size:12px;padding:16px 24px}}
 .badge{{display:inline-block;padding:1px 6px;border-radius:4px;background:var(--line);margin-right:6px}}
 </style></head><body>
 <header><h1>AIニュースダイジェスト</h1>
@@ -243,9 +301,10 @@ def render_html(items: list[dict], errors, now, hours, tz) -> str:
     for it in items:
         rows.append(
             f'<div class="item" data-src="{e(it["source"])}" data-lang="{e(it["lang"])}">'
-            f'<a href="{e(it["link"])}" target="_blank" rel="noopener">{e(it["title"])}</a>'
-            f'<div class="src"><span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
-            + (f'<div class="sum">{e(it["summary"])}</div>' if it["summary"] else "") + "</div>")
+            f'<a href="{e(it["link"])}" target="_blank" rel="noopener">{e(it.get("title_ja") or it["title"])}</a>'
+            + (f'<div class="orig">{e(it["title"])}</div>' if it.get("title_ja") else "")
+            + f'<div class="src"><span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
+            + (f'<div class="sum">{e(it.get("summary_ja") or it["summary"])}</div>' if it["summary"] else "") + "</div>")
     err_html = ("取得失敗: " + " / ".join(f"{e(n)} ({e(m)})" for n, m in errors)) if errors else ""
     return HTML_TMPL.format(date=f"{now.astimezone(tz):%Y-%m-%d %H:%M}", hours=hours, n=len(items),
                             src_opts="".join(f'<option>{e(s)}</option>' for s in srcs),
@@ -261,6 +320,7 @@ def main(argv=None) -> int:
     p.add_argument("--out", default="docs", help="出力ディレクトリ (既定: docs)")
     p.add_argument("--max-per-source", type=int, default=15, help="ソースごとの最大件数")
     p.add_argument("--open", action="store_true", help="生成後にHTMLをブラウザで開く")
+    p.add_argument("--no-translate", action="store_true", help="英語記事の日本語翻訳をしない")
     p.add_argument("--quiet", action="store_true")
     a = p.parse_args(argv)
 
@@ -292,6 +352,10 @@ def main(argv=None) -> int:
 
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
+    if not a.no_translate:
+        n = translate_items(items, out / "translations.json")
+        if not a.quiet:
+            print(f"  翻訳: {n}件 (新規)", file=sys.stderr)
     stamp = now.astimezone(tz).strftime("%Y-%m-%d")
     (out / f"digest-{stamp}.md").write_text(render_markdown(items, errors, now, a.hours, tz), encoding="utf-8")
     (out / f"digest-{stamp}.json").write_text(
