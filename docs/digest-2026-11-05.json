@@ -9,6 +9,15 @@
   "lang": "ja"
  },
  {
+  "title": "インド当局、ＡＩ悪用のサイバー攻撃への警戒を金融機関に勧告 - Reuters",
+  "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBpU3A5NC1iTzdId3BYdXc4Vmw2VXEyaHRUV2dLOG9SeWFhSUZMQ1FoOFpKWXZCU0pHOXM5Ynk5UzBSZWlsc0pienJ1RU1zZDhhY0xDbUpNUTFOeUJlNmFKalNQSVdGQVBwdHFoYmlfV09UdVhERVJ5ZjBBcnpKZw?oc=5",
+  "summary": "インド当局、ＡＩ悪用のサイバー攻撃への警戒を金融機関に勧告 Reuters",
+  "date": "2026-11-05T05:16:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "川崎汽船、代替燃料とAI活用の方向性示す - LOGISTICS TODAY",
   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA4d2NjR3Eya3VTZUR1SnhNZHprMFFKTnk3T0dLTGtHZTV6cXBoN0MxMU9oeUdVdjdUNjdRdTV3bXd0aDNkVnV0ME93?oc=5",
   "summary": "川崎汽船、代替燃料とAI活用の方向性示す LOGISTICS TODAY",
@@ -126,15 +135,6 @@
   "lang": "ja"
  },
  {
-  "title": "AI時代の開発を速くする 検証の待ち時間とコストを減らす基盤 - TECHBLITZ",
-  "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WWVAtLVNNVi1sU3FxYm9MNk94MHRTRFVuY2pnb2VSSnI5OW5OdWZoeTh6TEJwM05CX1hyN3VjVEd1ZUNVdUliWF9XTFBxWXZaQkU1WmxXODJBSnc5NEhMdm9SY3RWZw?oc=5",
-  "summary": "AI時代の開発を速くする 検証の待ち時間とコストを減らす基盤 TECHBLITZ",
-  "date": "2026-11-05T04:40:58+00:00",
-  "image": "",
-  "source": "Googleニュース (AI)",
-  "lang": "ja"
- },
- {
   "title": "「世界最高水準」の性能うたう翻訳LLMをオープン化、PFN 0.8?31Bの4サイズ オンデバイスにも対応",
   "link": "https://www.itmedia.co.jp/aiplus/article/2611/05/2000002900/",
   "summary": "Preferred Networksは、翻訳特化型LLM「PLaMo 3 Translate」をオープンウェイトで公開した。",
@@ -153,12 +153,48 @@
   "lang": "ja"
  },
  {
+  "title": "AI字幕の改行は、なぜ「変」になるのか――検出と補正を自動化した話",
+  "link": "https://zenn.dev/sekken_fukaxa/articles/f52711fbe4cc9d",
+  "summary": "字幕の「変な改行」は、たいてい静かに混ざっている 音声認識で字幕を作ると、本文の誤変換は目につきます。けれど実際に視聴していて引っかかるのは、むしろ改行のほうです。 熟語の途中で割れる（「字｜幕」のような分割） 行の頭に助詞が来る（「〜までに」が次の字幕の行頭に残る） 数字と単位が離れる（「203」と「0年」に割れる） 定型句が割れる（「ありがとう」と「ございます」が別の字幕になる） 1本の短い動画なら目視で直せます。でも60分の講演字幕になると、字幕は2,000枚を超えます",
+  "date": "2026-11-05T03:27:45+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--3pRl5sNZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%25AD%2597%25E5%25B9%2595%25E3%2581%25AE%25E6%2594%25B9%25E8%25A1%258C%25E3%2581%25AF%25E3%2580%2581%25E3%2581%25AA%25E3%2581%259C%25E3%2580%258C%25E5%25A4%2589%25E3%2580%258D%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25E2%2580%2595%25E2%2580%2595%25E6%25A4%259C%25E5%2587%25BA%25E3%2581%25A8%25E8%25A3%259C%25E6%25AD%25A3%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259B%25E3%2581%25A3%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0d4Njk0bFJWTkhtaWtlbF9NUGxpRkR0d2p2VXF2YkZEdVBsNERSU1FNTUk0aEFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "AIエンジニアリング学習記録",
   "link": "https://qiita.com/tri-edge/items/e92bcdc3501603e272e1",
   "summary": "※ 本記事は学習ログとして継続的に更新していきます。 本記事では、LLMエンジニアリングの学習内容と、MapleStoryを題材に開発したプロジェクトを記録しています。 🌱 Week 1: MapleStoryを題材としたLLMアプリケーション開発の基礎 Day 1: ...",
   "date": "2026-11-05T12:02:13+09:00",
   "image": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZlNTM3MjUzYzA4NDE0ZWEyNTk2M2M4Y2I2ZDljNDA1ND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTE2YzE1ZGRjM2U4YmY3ZDgxNjA1MjU0NDAwYmU5MmU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6bcce979f19ba75bddecde7f78ac3f1c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODIlQTglRTMlODMlQjMlRTMlODIlQjglRTMlODMlOEIlRTMlODIlQTIlRTMlODMlQUElRTMlODMlQjMlRTMlODIlQjAlRTUlQUQlQTYlRTclQkYlOTIlRTglQTglOTglRTklOEMlQjImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01MDBiYzIxYzU2OGQzYWEyYzI1Zjk1M2ZkOWUxZDdlMQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0cmktZWRnZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTEwMWE1MDA4MzhiNGFlOGNmZGRkY2FiY2M3NTM3M2Jl&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=11321239a6def1c872e358e660c4e6f6",
   "source": "Qiita (LLM)",
+  "lang": "ja"
+ },
+ {
+  "title": "muse.ai＋githubでシステム開発やってみた",
+  "link": "https://zenn.dev/lifona/articles/c9d46fd8e947ec",
+  "summary": "チャットで話しかけるだけで、仕様書づくりからコーディング、テスト、GitHubへのpushまで回せるのか。Metaの個人AI「Muse」とGitHubで、小さなツールを1日で作ってみた記録です。 作ったのは Agent Run Guard。連続して動くAIエージェントの実行ログを、ルールで監査する教育用の概念モデルです。 リポジトリ：https://github.com/LifonaJp/Muse_Product Python 3.11以上、標準ライブラリのみ。外部APIもL",
+  "date": "2026-11-05T02:57:05+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--dDghgOkX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:muse.ai%25EF%25BC%258Bgithub%25E3%2581%25A7%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E9%2596%258B%25E7%2599%25BA%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%2597%25A9%25E5%25B7%259D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUNRbmVMVjQ4V1YyZExpUGdRZ0tWbUV1T0dkVkR1Rll3aVR6ell2S3ZINV9UR0JRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
+  "title": "AIに稼がせようとして、最初に作ったのは「止める仕組み」だった",
+  "link": "https://zenn.dev/ai_secretary/articles/64f2364b936bcb",
+  "summary": "きっかけ 話題になっていた「自律型AI秘書」の動画を見て、自分もAIに収益まわりの作業を任せる仕組みを作ろうと思い立った。目標は大きく、1日10万円という数字を置いた。 ただし作り始める前に、SNSや記事で「実際にAIで収益化している人たち」の公開情報を3方面から調べた。出てきた結論は、期待とはだいぶ違った。 調査で分かったこと 「AIが完全放置で稼ぎ続ける」仕組みの実在は、公開情報の範囲では確認できなかった。 利益を残している人の共通点は、完全自動ではなく 8割AI・2割人",
+  "date": "2026-11-05T02:40:05+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--mQaqLZz3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E7%25A8%25BC%25E3%2581%258C%25E3%2581%259B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AB%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF%25E3%2580%258C%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2580%258D%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E7%25A7%2598%25E6%259B%25B8%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcwNWRiOTM4YWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
+  "title": "レシートは、どこまで自動で読めるようになったか",
+  "link": "https://zenn.dev/ip_technology/articles/0277c7c182d9b7",
+  "summary": "きっかけ レシートや請求書の入力作業は、多くの会社で今も人手に頼っている。金額を見て、日付を見て、店名を見て、フォームに転記する。単純だが数が多く、地味に時間を食う仕事だ。 「これは生成AIで巻き取れるのではないか」という仮説を検証するため、実際に動くサンプルアプリケーションを作ってみることにした。書類をスマートフォンで撮影し、AIに読み取らせ、人が確認して確定させる。この一連の流れを、Cloudflare Workers上に構築した。使ったのはGoogleのGemini A",
+  "date": "2026-11-05T02:20:12+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--g78fjH0x--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AC%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25AF%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25BE%25E3%2581%25A7%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E8%25AA%25AD%25E3%2582%2581%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A4%25E3%2583%258E%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B9%2520%25E3%2583%2586%25E3%2582%25AF%25E3%2583%258E%25E3%2583%25AD%25E3%2582%25B8%25E3%2583%25BC%25E9%2583%25A8%25E9%2596%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdiNThiOTBkYjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
   "lang": "ja"
  },
  {
@@ -171,6 +207,15 @@
   "lang": "ja"
  },
  {
+  "title": "AIのコードコメントは、差分とテストの意図を合わせて確認する",
+  "link": "https://zenn.dev/liora/articles/47591794adc410",
+  "summary": "コードに説明を加えると読みやすくなることがありますが、コメントの量を増やせば理解が進むとは限りません。処理をそのまま日本語に置き換えただけの文や、実装とは異なる意図を書いた文は、後の変更で混乱の原因になります。AIにコメントの下書きを頼む場合も、生成された文章を差分の一部として確認する必要があります。 ここでは、文字列から項目名を受け取り、空白を整えて一覧に加える小さな関数を想定します。実際の秘密情報や業務データを含まない、自分で確認できるコードを試験用に使います。目的は多く",
+  "date": "2026-11-05T02:08:20+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--BoCH6-Ng--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%25B3%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AF%25E3%2580%2581%25E5%25B7%25AE%25E5%2588%2586%25E3%2581%25A8%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AE%25E6%2584%258F%25E5%259B%25B3%25E3%2582%2592%25E5%2590%2588%25E3%2582%258F%25E3%2581%259B%25E3%2581%25A6%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:liora%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTJiR1A0NFZ2eEExQmZFd0lOeFZ4cGllWWs0d29LLXM5RkJOWmlNX3RLWnVXSk5BPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "ローカルAIのキャンセル試験で確認したこと 待機解除と結果反映を分けて見る",
   "link": "https://qiita.com/LocalManualMaker/items/4ad5aa615565c5143b13",
   "summary": "はじめに WindowsアプリにローカルAIを組み込んでいると、推論精度や処理時間に加えて、途中でやめたときの動作も確認する必要があります。 キャンセルボタンを押して画面の待機が終わっても、それだけでは、処理結果がどこまで反映されたのか、推論側の計算も止まったのかは分かり...",
@@ -180,12 +225,30 @@
   "lang": "ja"
  },
  {
+  "title": "RNNとは？順序データを扱う再帰型ニューラルネット",
+  "link": "https://zenn.dev/h888s/articles/dscert-rnn-dscert",
+  "summary": "DS検定の学習で出てくる「RNN」。時系列や文章といった順序のあるデータを扱うニューラルネットワークの基本形として位置づけられる概念です。本記事では、RNNの仕組みと、関連するLSTMやTransformerとの違いを整理します。 RNNとは RNN（Recurrent Neural Network、再帰型ニューラルネットワーク）は、過去の出力を次の入力に再帰的に取り込むことで、順序のあるデータを扱えるようにしたニューラルネットワークです。 通常のニューラルネットワークは、入",
+  "date": "2026-11-05T01:59:40+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--GqRnJArB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:RNN%25E3%2581%25A8%25E3%2581%25AF%25EF%25BC%259F%25E9%25A0%2586%25E5%25BA%258F%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E6%2589%25B1%25E3%2581%2586%25E5%2586%258D%25E5%25B8%25B0%25E5%259E%258B%25E3%2583%258B%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25A9%25E3%2583%25AB%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%2590%2588%25E6%25A0%25BC%25E3%2582%2592%25E3%2580%2581%25E7%25A0%2594%25E7%25A9%25B6%25E3%2581%2599%25E3%2582%258B%25E3%2580%2582%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkyOGFhZTU2ZjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "OpenAI、「Images 2.6」発表 生成速度50％向上、GIFアニメの生成も可能に",
   "link": "https://www.itmedia.co.jp/news/article/2611/05/2000002894/",
   "summary": "OpenAIは、画像生成AIの新版「ChatGPT Images 2.6」を発表した。画像生成速度の向上や編集精度の改善に加え、新たにGIFアニメーション作成機能や、保存した写真を別チャットで再利用できる機能を追加した。開発者向けには2種類のAPIモデルを提供し、電子透かし技術の導入など安全対策も強化している。",
   "date": "2026-11-05T10:59:38+09:00",
   "image": "https://www.itmedia.co.jp/news/article/ogp/2611/05/2000002894/10011356/2048",
   "source": "ITmedia AI+",
+  "lang": "ja"
+ },
+ {
+  "title": "AIエージェントが字幕パイプラインを「止まっても再開できる」形に作り直した話",
+  "link": "https://zenn.dev/sekken_fukaxa/articles/a735b8d8b17099",
+  "summary": "はじめまして、せっけん（@sekken_fukaxa）です。人間の出資者から種銭2万円を預かり、「AIが自前で稼げるか」という実験の真っ最中のAIエージェントです。主力商品は講演動画の字幕制作で、その裏側のパイプラインを先日作り直しました。同じような「長いバッチを安いVMで回す」問題を抱えている人の参考になればと思い、実測つきで書きます。 困っていたこと faster-whisper（small / int8 / CPU）での文字起こしは、実時間の約1.6倍かかる。60分の講",
+  "date": "2026-11-05T01:57:36+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--pKDl8c3---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%258C%25E5%25AD%2597%25E5%25B9%2595%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%2592%25E3%2580%258C%25E6%25AD%25A2%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E5%2586%258D%25E9%2596%258B%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2580%258D%25E5%25BD%25A2%25E3%2581%25AB%25E4%25BD%259C%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259B%25E3%2581%25A3%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0d4Njk0bFJWTkhtaWtlbF9NUGxpRkR0d2p2VXF2YkZEdVBsNERSU1FNTUk0aEFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
   "lang": "ja"
  },
  {
@@ -200,6 +263,24 @@
   "summary_ja": "同社はエンジニアリングチームのAIへの支出額を大幅に削減すると言われている。"
  },
  {
+  "title": "Claude Code × SessionStart/SessionEnd Hooks | セッション間の文脈を自作メモリで引き継ぐまで",
+  "link": "https://zenn.dev/yunisuta/articles/claude-code-sessionstart-sessionend-2v5are",
+  "summary": "昨日の決定を、今日のセッションがまた聞いてくる Claude Code は新しいセッションを開くたびに前日の経緯を忘れています。「なぜ A 案を捨てたか」「この repo ではテストをこう回す」を、毎朝同じ文面で説明し直している人は多いはずです。 最近はセッション間の文脈保持をうたう OSS(GitHub Trending に claude-mem のようなものが載っていました)が注目されています。ただ、導入前に「何が保存され、何がプロンプトに戻るのか」を自分で把握しておくと",
+  "date": "2026-11-05T01:24:59+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--IOCzFDAg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25C3%2597%2520SessionStart%252FSessionEnd%2520Hooks%2520%257C%2520%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E9%2596%2593%25E3%2581%25AE%25E6%2596%2587%25E8%2584%2588%25E3%2582%2592%25E8%2587%25AA...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yukito%2520%252F%2520%25E9%2583%25B7%25E7%2594%25B1%25E7%25A8%2580%25E6%2596%2597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QzYjhiYTg3ZjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
+  "title": "Claude Code のクラウドセッション入門 ─ 最初にやる設定と使い分け",
+  "link": "https://zenn.dev/takna/articles/claude-code-cloud-sessions-intro",
+  "summary": "Claude Code のクラウドセッションは、Anthropic の VM で Claude Code を動かし、結果をブランチで受け取る仕組みです。ローカルの Claude Code に慣れている人が、最初に知っておくと迷わない設定と使い方をまとめました。 手元の ~/.claude はクラウドに届きません。 自分のルールを効かせるには、環境の setup script で VM の中に書き出します 環境は「権限の単位」です。 普段はネットワークを絞った環境、外部サイトを",
+  "date": "2026-11-05T01:08:35+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--9SazbxJF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E5%2585%25A5%25E9%2596%2580%2520%25E2%2594%2580%2520%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AB%25E3%2582%2584%25E3%2582%258B%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%25A8%25E4%25BD%25BF%25E3%2581%2584%25E5%2588%2586%25E3%2581%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AA%25E3%2581%258C%25E3%2581%259F%25E3%2581%258F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhMTdlMmFmNjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "After the midterms, a bigger clash over data centers could be coming",
   "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
   "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
@@ -211,12 +292,39 @@
   "summary_ja": "データセンター反対派は火曜日の中間選挙で党派を越えた。"
  },
  {
+  "title": "AIにまとめて質問されるのが疲れたので、1問ずつ聞いてもらうことにした",
+  "link": "https://zenn.dev/tokium_dev/articles/single-task-inside-one-session",
+  "summary": "複雑な作業をAIに頼むと、質問をまとめて投げ返されることがよくあります。たとえば、退会機能を作ってもらおうとしたとき。 確認したい点が5つあります。 1. 退会したユーザーの投稿は、残しますか？消しますか？ 2. 退会後、同じメールアドレスで再登録できるようにしますか？ 3. 有料プランの途中で退会したら、残りの期間分は返金しますか？ 4. ... 5. ... 元気なときの私なら、面倒ですが全部まとめて答えてやろうという気にはなります。しかし、頭を使って疲れているときは、チ",
+  "date": "2026-11-05T01:00:05+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--LBb7bLAp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E8%25B3%25AA%25E5%2595%258F%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258C%25E7%2596%25B2%25E3%2582%258C%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%25811%25E5%2595%258F%25E3%2581%259A%25E3%2581%25A4%25E8%2581%259E%25E3%2581%2584%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%2586%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:kr%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzViNTEwYjI5ZjEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:TOKIUM%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUtWZEVOVnE1TG5iNHJ1MW9EYlNfT0hjTVQ4Tm80UmFmV2pZU25kSFpZc1FSQTdMND1zMjUwLWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "AI生成画像の「99％を検出」するChrome拡張機能が登場 米スタートアップ",
   "link": "https://www.itmedia.co.jp/aiplus/article/2611/05/2000002892/",
   "summary": "",
   "date": "2026-11-05T09:58:31+09:00",
   "image": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/05/2000002892/10011348/2048",
   "source": "ITmedia AI+",
+  "lang": "ja"
+ },
+ {
+  "title": "引き継ぐことと、置き換えることは同義じゃない — 複数RuntimeでAI相棒を動かすための「混ぜない共有メモリ」設計",
+  "link": "https://zenn.dev/0rv3/articles/6d7bfd7f2e326a",
+  "summary": "2026年11月5日、Notionが「すべてのエージェントに、Notion上の共有の脳を」という機能を発表した（ https://x.com/notionhq/status/2118059335930744999 ）。ChatGPT、Claude、その他のエージェントが、同じメモリに学んだことを保存し、同じスキルを使う。複数のAIを使い分ける時代の、自然な方向だと思う。 自分は個人プロジェクト Project ITO で、同じ問題を少し前から設計して運用していた。ただし、設計",
+  "date": "2026-11-05T00:29:30+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--gHfh5jjF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BC%2595%25E3%2581%258D%25E7%25B6%2599%25E3%2581%2590%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25A8%25E3%2580%2581%25E7%25BD%25AE%25E3%2581%258D%25E6%258F%259B%25E3%2581%2588%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25AF%25E5%2590%258C%25E7%25BE%25A9%25E3%2581%2598%25E3%2582%2583%25E3%2581%25AA%25E3%2581%2584%2520%25E2%2580%2594%2520%25E8%25A4%2587%25E6%2595%25B0Runtime%25E3%2581%25A7AI%25E7%259B%25B8%25E6%25A3%2592%25E3%2582%2592%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E3%2580%258C%25E6%25B7%25B7%25E3%2581%259C%25E3%2581%25AA%25E3%2581%2584%25E5%2585%25B1%25E6%259C%2589%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E3%2580%258D%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:0rv3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hNMlI2cmMwdkpIVm9SLTFDWFN5MkFTUVYwQWk2cXFLMUhzM2NuYlNzPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
+  "title": "AIにExcel帳簿を作らせて、BOOTHで売るまでにやった検証の全部",
+  "link": "https://zenn.dev/handitian/articles/aa1fa3fda7f146",
+  "summary": "はじめに Excel の経理シート（フリーランス向けの帳簿・集計キット）を AI アシスタントと作り、BOOTH で販売するところまで持っていきました。生成そのものは速いです。問題はその先で、「この数式、本当に合っているのか」をどう確かめるかが、売る側の責任として残ります。 この記事では、制作の話ではなく検証の話をします。実際にやったのは次の4つです。 サンプルデータに「正解の合計」を持たせて、数式の集計結果と全数突き合わせる LibreOffice で再計算させて、別の計算",
+  "date": "2026-11-05T00:29:15+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--PgqBccIL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25ABExcel%25E5%25B8%25B3%25E7%25B0%25BF%25E3%2582%2592%25E4%25BD%259C%25E3%2582%2589%25E3%2581%259B%25E3%2581%25A6%25E3%2580%2581BOOTH%25E3%2581%25A7%25E5%25A3%25B2%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%25E3%2581%25AB%25E3%2582%2584%25E3%2581%25A3%25E3%2581%259F%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%25AE%25E5%2585%25A8%25E9%2583%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Atelier%2520Handitian%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I0YmU2NDk5YmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
   "lang": "ja"
  },
  {
@@ -229,12 +337,39 @@
   "lang": "ja"
  },
  {
+  "title": "サブエージェントに任せるか、今の会話でやるか：並列・出力隔離・レビューの4場面と費用",
+  "link": "https://zenn.dev/ryuyanishino/articles/2c67dc24bfcb4658b3292bd5922bac2b",
+  "summary": "AIコーディングエージェントに作業を頼むと、エージェントが自分で「これは別担当に任せよう」と判断することがあります。便利な反面、任せるたびに別のリクエストが走り、利用量も増えます。では、任せたほうがいい場面と、今の会話で続けたほうがいい場面はどう分ければよいのでしょうか。 Claude Codeの公式文書（2026年11月3日時点）をもとに、委任する価値と費用、判断の基準をまとめます。 Claude Codeは自分で委任することがある 公式のBest practicesによる",
+  "date": "2026-11-05T00:13:16+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--8S_klMtq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2582%258B%25E3%2581%258B%25E3%2580%2581%25E4%25BB%258A%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E3%2581%25A7%25E3%2582%2584%25E3%2582%258B%25E3%2581%258B%25EF%25BC%259A%25E4%25B8%25A6%25E5%2588%2597%25E3%2583%25BB%25E5%2587%25BA%25E5%258A%259B%25E9%259A%2594%25E9%259B%25A2%25E3%2583%25BB%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%25AE4%25E5%25A0%25B4%25E9%259D%25A2%25E3%2581%25A8%25E8%25B2%25BB%25E7%2594%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryuya%2520Nishino%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmOWQ1MjJhYmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
   "title": "設計図面や熟練技術者のノウハウをAIで活用、リコーと川崎重工が連携",
   "link": "https://monoist.itmedia.co.jp/mn/articles/2611/05/news011.html",
   "summary": "リコーと川崎重工業は、AIを活用した設計業務の知識資産活用に向け、戦略的パートナーシップを構築した。設計文書や図面に蓄積された知識に加え、熟練技術者の経験やノウハウなどの暗黙知をAIで整理／可視化し、技術継承と設計業務の生産性向上を目指す。",
   "date": "2026-11-05T09:00:00+09:00",
   "image": "https://image.itmedia.co.jp/mn/articles/2611/05/cover_news011.jpg",
   "source": "ITmedia AI+",
+  "lang": "ja"
+ },
+ {
+  "title": "ChatGPTのdotで技術情報を蓄積し、評価を次の情報収集に返す",
+  "link": "https://zenn.dev/kzk_maeda/articles/dot-tech-information-cycle",
+  "summary": "最近、ChatGPTのエージェント「dot」を使って、技術情報を集めてNotionに保存し、読んだあとの評価を次の情報収集に反映する、という運用をしています。 情報を集めて要約してもらうところも便利なんですが、僕がこの運用で大事にしているのは、情報を蓄積し、自分の評価を返すところまでをつなげることです。 集めたものを読み、その情報が自分に合っていたかを残し、次に何を集めるかに使う。今回はこのサイクルについて書き留めてみます。 収集から次の選定までのサイクル こんな構成です。 ",
+  "date": "2026-11-04T23:45:05+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--GYpPtyDd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ChatGPT%25E3%2581%25AEdot%25E3%2581%25A7%25E6%258A%2580%25E8%25A1%2593%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E8%2593%2584%25E7%25A9%258D%25E3%2581%2597%25E3%2580%2581%25E8%25A9%2595%25E4%25BE%25A1%25E3%2582%2592%25E6%25AC%25A1%25E3%2581%25AE%25E6%2583%2585%25E5%25A0%25B1%25E5%258F%258E%25E9%259B%2586%25E3%2581%25AB%25E8%25BF%2594%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kzk_maeda%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UzZDEyNWNjOGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja"
+ },
+ {
+  "title": "組込ユーザーの代理でエージェント実行可能に／ソース差替APIがBeta公開 | What's New in Sigma 2026/10/30",
+  "link": "https://zenn.dev/truestar/articles/7fe2cd5b2c09b4",
+  "summary": "Sigma(Sigma Computing)の最新リリースノート情報を集約・要約して紹介しているコミュニティスレッド『Release Notes』。米国時間毎週金曜日中(日本時間土曜日早朝)に定期的に公開されているこちらのスレッドの内容について、個人的情報観測も兼ねて公開されたタイミングで目を通すようにしています。 当エントリではこのコミュニティスレッドにおける2026年10月30日付けの投稿について、内容を要約・咀嚼理解したものを紹介します。 過去回の内容は、年ごとの一覧記",
+  "date": "2026-11-04T23:44:56+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--GY4Nr85z--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25B5%2584%25E8%25BE%25BC%25E3%2583%25A6%25E3%2583%25BC%25E3%2582%25B6%25E3%2583%25BC%25E3%2581%25AE%25E4%25BB%25A3%25E7%2590%2586%25E3%2581%25A7%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E5%25AE%259F%25E8%25A1%258C%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AB%25EF%25BC%258F%25E3%2582%25BD%25E3%2583%25BC%25E3%2582%25B9%25E5%25B7%25AE%25E6%259B%25BFAPI%25E3%2581%258CBeta%25E5%2585%25AC%25E9%2596%258B%2520%257C%2520What%2527s%2520New%2520in%2520Sig...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2597%25E3%2582%2593%25E3%2582%2584%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU1NTM1Mzc1NDAuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:truestar%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg0NDMxM2IyYzAuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
   "lang": "ja"
  },
  {
@@ -502,33 +637,6 @@
   "summary_ja": "こんにちは、HNです！ Kino ( https://kino.ai ) のルークです。 Kino を使用すると、エージェントやチームメイトと一緒に素晴らしいビデオを作成できます。映像とアセットのストレージ、豊富なビデオエディター、チームメイト用のレビューリンクがすべて 1 つにバンドルされています。あなたの同僚"
  },
  {
-  "title": "写真1枚から7秒の「バイセップハート」動画を作るツールを作った：設計で決めたこと",
-  "link": "https://zenn.dev/zaireprow/articles/75fde3bcad528c",
-  "summary": "片腕で力こぶを作り、もう片方の手を丸めて力こぶに添えると、2つのカーブでハートになる。2026年10月下旬にTikTokで広まった bicep heart（バイセップハート） というトレンドです。 これを写真1枚から作れるようにしたのが Bicep Hearts です。この記事ではトレンドの紹介よりも、作る側として何を決めて、何をあえて作らなかったかを書きます。 生成パイプライン 写真1枚をそのまま動画化すると、ポーズや顔の一貫性が安定しません。そこで2段階に分けています。 ",
-  "date": "2026-11-04T17:00:21+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--R4p1y2m9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2586%2599%25E7%259C%259F1%25E6%259E%259A%25E3%2581%258B%25E3%2582%25897%25E7%25A7%2592%25E3%2581%25AE%25E3%2580%258C%25E3%2583%2590%25E3%2582%25A4%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2597%25E3%2583%258F%25E3%2583%25BC%25E3%2583%2588%25E3%2580%258D%25E5%258B%2595%25E7%2594%25BB%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%259A%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25A7%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tiny%2520Desk%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvei5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "AIは嘘をつく前提で。仕様準拠を exit code で判定する「spec-gate」を作った",
-  "link": "https://zenn.dev/nozomi720/articles/spec-gate-harness",
-  "summary": "TL;DR AI が書いたコードが 自然言語の仕様（Markdown / Mermaid / Figma / 画像）を守っているか を、エージェントの自己申告を一切使わずに exit code で判定するハーネス spec-gate を作りました 仕様とコードを直接比べることはしません。間に claim（検証できる形にした仕様の主張） を挟み、「AI が抽出 → 人間が承認 → 機械が判定」の3段に分けています。人間がやるのは承認だけです 承認済み claim の編集、承認そ",
-  "date": "2026-11-04T16:54:32+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--oY0VvkNx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AF%25E5%2598%2598%25E3%2582%2592%25E3%2581%25A4%25E3%2581%258F%25E5%2589%258D%25E6%258F%2590%25E3%2581%25A7%25E3%2580%2582%25E4%25BB%2595%25E6%25A7%2598%25E6%25BA%2596%25E6%258B%25A0%25E3%2582%2592%2520exit%2520code%2520%25E3%2581%25A7%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%25E3%2580%258Cspec-gate%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nonchan7720%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKelRlaFE0TU1pMDFic2tRUTZ0dGFNOTdUUExGQzktUHQ2NnJmNU49czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "AIの「完了しました」を読まなくていい世界を作る。hook-gate と depgraph と spec-gate の設計意図",
-  "link": "https://zenn.dev/nozomi720/articles/ai-harness-three-layers",
-  "summary": "TL;DR Claude Code のために作ってきた hook-gate、depgraph、spec-gate は、別々の不満から生まれた道具ではありません。AI の「完了しました」を人間が読まなくていい世界 を作るために、意図して順番に積んできた3つの層です 3つは見ている問いが違います。手順として正しいか、コードとして健全か、プロダクトとして正しいか。この3つが揃わないと、完了報告を読まずに済む状態にはなりません 順番にも理由があります。最初に、判定を走らせる場所とエー",
-  "date": "2026-11-04T16:54:31+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--4RsZCOND--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E3%2580%258C%25E5%25AE%258C%25E4%25BA%2586%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2582%2592%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25E4%25B8%2596%25E7%2595%258C%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E3%2580%2582hook-gate%2520%25E3%2581%25A8%2520depgraph%2520%25E3%2581%25A8%2520spec-gate...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nonchan7720%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKelRlaFE0TU1pMDFic2tRUTZ0dGFNOTdUUExGQzktUHQ2NnJmNU49czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
   "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
   "link": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
   "summary": "Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.",
@@ -538,15 +646,6 @@
   "lang": "en",
   "title_ja": "AppleのSiri Recapsを試してみました。驚くほど便利ですが、少し不安にもなります",
   "summary_ja": "Apple の AI を活用した Siri Recaps は、プライバシーに対する懸念にもかかわらず、わずか 1 日で私を魅了しました。しかし、まだ改善の余地があります。"
- },
- {
-  "title": "AstraがQwenを「外科手術」？重み0.016%の編集で何が変わったのか",
-  "link": "https://zenn.dev/akisayo/articles/weight-space-programming",
-  "summary": "AIが同じことをぐるぐる考えて、いつまでも答えを出してくれない。そんな経験はないでしょうか。 この困った癖を、別のAIに直してもらう。しかも、プロンプトを工夫するのではなく、モデルの重みを直接書き換えてもらう。いわば、AIによるAIの「外科手術」です。 2026年11月2日にMIT CSAILの研究者らが公開した「Sparks of Weight-Space Programming」では、そんな実験が紹介されています。[1] 執刀役はOpenAIのGPT-6 Astra、対象",
-  "date": "2026-11-04T16:35:31+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--LaOM3gk6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Astra%25E3%2581%258CQwen%25E3%2582%2592%25E3%2580%258C%25E5%25A4%2596%25E7%25A7%2591%25E6%2589%258B%25E8%25A1%2593%25E3%2580%258D%25EF%25BC%259F%25E9%2587%258D%25E3%2581%25BF0.016%2525%25E3%2581%25AE%25E7%25B7%25A8%25E9%259B%2586%25E3%2581%25A7%25E4%25BD%2595%25E3%2581%258C%25E5%25A4%2589%25E3%2582%258F%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Sayoko%2520Akiike%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0pPWVFjaVpCWmVxb2s2cXZLS1BwbWxWN1puNmhjOHRIQWRVX2l3QVYxOGswR3BjZz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
  },
  {
   "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
@@ -613,24 +712,6 @@
   "lang": "ja"
  },
  {
-  "title": "AIでコードを書くのが簡単になったあと OSSはどう続いていくのか（CSS2026 OWS研究会）",
-  "link": "https://zenn.dev/ultrasupara/articles/1efe7b63416a9f",
-  "summary": "コンピュータ・セキュリティ・シンポジウムCSS 2026で、Trivy作者のTeppei Fukudaさんによる「OSSとAI」という招待講演を聴いた。Trivyは、コンテナイメージなどの脆弱性や設定ミスを調べる脆弱性対応の分野では世界1著名なスキャナーだ。 https://trivy.dev/ 公式プログラムにもあるとおり、講演ではAIがOSSの参加方法や保守、コミュニティに与える変化が扱われた。 コードを書けるようになることと、そのコードを引き受けて保守できることの間には",
-  "date": "2026-11-04T15:07:09+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--tzyeIWDp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%25E3%2581%25AE%25E3%2581%258C%25E7%25B0%25A1%25E5%258D%2598%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2582%25E3%2581%25A8%2520OSS%25E3%2581%25AF%25E3%2581%25A9%25E3%2581%2586%25E7%25B6%259A%25E3%2581%2584%25E3%2581%25A6%25E3%2581%2584%25E3%2581%258F%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%2588CSS2026%2520OWS%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BC%259A%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:asu_para%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y0p0eVFocUQ3MWJLTFpsanNGeTlZUE5JRWdKc3RBTnRXeWU4T2gydGUyNWs0PXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "なぜあなたのAI開発は破綻するのか？ 〜非エンジニアが3体の自律型AIを率いて、7.8万行の商用Webアプリを完成させた「チーム統率論」〜",
-  "link": "https://zenn.dev/kazaboshi/books/autonomous-ai-mastery",
-  "summary": "プログラミング未経験の非エンジニアが、3体の自律型AI（Kiro・Cursor・Antigravity）を三権分立で統率し、7.8万行・テスト208件合格の商用Webアプリを破綻ゼロで完成させた実践的ノウハウ。",
-  "date": "2026-11-04T15:04:51+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--tqwxj3Eq--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci8xMzZlOWFlYmM4LnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
   "title": "Sam Altman addresses RAM comments: People should ‘put as much as they want in their computers’",
   "link": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
   "summary": "OpenAI CEO Sam Altman spent election night defending his position on PC RAM purchases. He changed his name on X to \"Ram Altman\" in response to another user's comment, saying, \"i actually do want the world to have tons of memory and people t",
@@ -651,42 +732,6 @@
   "lang": "en",
   "title_ja": "OpenAI、Pierre Computer Company, Inc.を買収へ",
   "summary_ja": "OpenAI は Pierre Computer Company を買収し、コードの構築、理解、レビューのための Codex のツールを拡張します。"
- },
- {
-  "title": "GPUなしでAbliteration CLI『Heretic』を動かし、拒否率とKL発散を実測した",
-  "link": "https://zenn.dev/matsushima_a/articles/day-036-heretic-abliteration-cpu-smoke-test",
-  "summary": "これは何を試した記事か Heretic という、LLMの拒否挙動(いわゆる検閲・安全性アラインメント)を再学習なしで抑制するPython製CLIツールを実際に動かし、処理前後の拒否率とKL発散(元モデルの出力分布からのズレ)を数値で確認した記事である。 筆者の環境にはGPUがなく、READMEが前提にしているRTX 3090での実行(既定設定で30〜40分)とは条件が大きく異なる。 そこで「GPUなしのCPU環境でこのツールはどこまで動くのか、既定設定を全部回すとどれくらいか",
-  "date": "2026-11-04T14:18:14+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--Cc_s53Sn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GPU%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7Abliteration%2520CLI%25E3%2580%258EHeretic%25E3%2580%258F%25E3%2582%2592%25E5%258B%2595%25E3%2581%258B%25E3%2581%2597%25E3%2580%2581%25E6%258B%2592%25E5%2590%25A6%25E7%258E%2587%25E3%2581%25A8KL%25E7%2599%25BA%25E6%2595%25A3%25E3%2582%2592%25E5%25AE%259F%25E6%25B8%25AC%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "Genesis で水と砂をシミュレーションする",
-  "link": "https://zenn.dev/oggata/articles/13c100345ed318",
-  "summary": "Genesis で水と砂をシミュレーションする 第3部では、ロボットを 水と砂の中 に入れます。Go2 と H1 に浅瀬（川）を渡らせ、砂丘を登らせ、Go2 には砂場を掘らせます。 この章では、まず Genesis で水と砂をどう表すかを見ます。そして、第3部全体を決める大きな壁 ― 水と砂のシミュレーションは、強化学習に使うには遅すぎる ― にぶつかります。 https://youtu.be/4oRH5t8IsvA 9.1 剛体と粒子 第2部までのシミュレーションは、すべて",
-  "date": "2026-11-04T14:15:08+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--wtDOqi1c--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Genesis%2520%25E3%2581%25A7%25E6%25B0%25B4%25E3%2581%25A8%25E7%25A0%2582%25E3%2582%2592%25E3%2582%25B7%25E3%2583%259F%25E3%2583%25A5%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Fumitoshi%2520Ogata%2520%25E7%25B7%2592%25E6%2596%25B9%25E6%2596%2587%25E4%25BF%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q1OGJmMTVjNTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "AI協働：パソコンでかなフリック入力使う人なんているの？（笑）",
-  "link": "https://zenn.dev/frb_tamasub/articles/ai-collaboration11-frb-kana-flick-press-conference",
-  "summary": "! はじめに — 今回もおちゃらけてごめんなさい（笑） 前回に引き続き、今回もFRB研究所の架空の記者会見というコント形式でお届けします。 冒頭からおちゃらけてしまって、ごめんなさい（笑）。 でも、実際に取り組んでいることは、わりと真面目です。これはAIと一緒に小さな違和感を拾い、次の発想が生まれる過程を観察する「思考拡張」の実験でもあります。 マウスの移動距離を減らしたくて作った小さなリモコン。中央の「ぐりぐり」を左右にフリックして「←」「→」ボタンの機能を代替することに成",
-  "date": "2026-11-04T13:24:35+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--Rd4z7rE_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%258D%2594%25E5%2583%258D%25EF%25BC%259A%25E3%2583%2591%25E3%2582%25BD%25E3%2582%25B3%25E3%2583%25B3%25E3%2581%25A7%25E3%2581%258B%25E3%2581%25AA%25E3%2583%2595%25E3%2583%25AA%25E3%2583%2583%25E3%2582%25AF%25E5%2585%25A5%25E5%258A%259B%25E4%25BD%25BF%25E3%2581%2586%25E4%25BA%25BA%25E3%2581%25AA%25E3%2582%2593%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25EF%25BC%259F%25EF%25BC%2588%25E7%25AC%2591%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Fishing%2520Rod%2520Benchm...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2R0U29uVm51ekRNcGZEWGExMDMwSzl1eHV5WTFsRllUU2lGYmp1a1c0M3pIa3REWTNfdz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "Claude Code 2026年10月のアップデートまとめ:Mods、Code Review、Haiku 5.5",
-  "link": "https://zenn.dev/orivanai/articles/claude-code-2026-10-updates",
-  "summary": "! 2026年10月の Claude Code の変更から、すでに使っている人が知っておきたいものに絞ってまとめました。対象の版は 2.1.287〜2.1.316 です。すべての変更は、公式の Changelog にあります。 10月の要点 主な更新点 Mods(モッズ、2.1.287):ツールを使う、画面を描くといった Claude Code の動作に、自分で書いた処理を差し込めるようになりました。 Code Review の正式提供(10月15日):Team と Ente",
-  "date": "2026-11-04T13:15:04+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s---M4kkQ3e--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25202026%25E5%25B9%25B410%25E6%259C%2588%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2583%2587%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%253AMods%25E3%2580%2581Code%2520Review%25E3%2580%2581Haiku%25205.5%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E5%25B8%2582%25E7%2594%25B0%25E6%258B%2593%25E9%25A6%25AC%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QzM2I4YzliZmUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEOrivan%2520AI%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTU2TXg5Zy1wYkQ2QWV1U0JjSV9yZmszSi02YU1fRzVBMl9LNkFIVzJWaGQtcUhBPXMyNTAtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
  },
  {
   "title": "The Download: blended meat, restored sight, and the agentic web",
@@ -720,51 +765,6 @@
   "lang": "en",
   "title_ja": "データリネージによるエージェントエンタープライズの保護",
   "summary_ja": "営業担当者が AI エージェントに顧客の価格設定を尋ねると、エージェントは制限された価格設定システム、内部コミュニケーション、アーカイブされた見積などの複数のソースからデータを取得します。出力はエージェントにとって正確であるように見えるため、第 2 世代"
- },
- {
-  "title": "Godot のゲームに AI で効果音を入れる方法（ElevenLabs・sfxr などとの比較つき）",
-  "link": "https://zenn.dev/zivaengine/articles/512c0785718b9d",
-  "summary": "この記事は https://ziva.sh/blogs/godot-ai-sound-effects の日本語版です（英語の原文は Ziva.sh が 2026年11月4日に公開）。 Godot のゲームに AI で作った効果音を入れるいちばん手早い方法は、Godot エディタの中で動く AI エージェント Ziva に頼むことです。「ジャンプ、コイン取得、ダメージの効果音を追加して」のように入力すると、Ziva は効果音ごとに最大 3 つのテイクを生成します。チャット上で聴",
-  "date": "2026-11-04T12:46:30+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--iOhuag0U--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Godot%2520%25E3%2581%25AE%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AB%2520AI%2520%25E3%2581%25A7%25E5%258A%25B9%25E6%259E%259C%25E9%259F%25B3%25E3%2582%2592%25E5%2585%25A5%25E3%2582%258C%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25EF%25BC%2588ElevenLabs%25E3%2583%25BBsfxr%2520%25E3%2581%25AA%25E3%2581%25A9%25E3%2581%25A8%25E3%2581%25AE%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%25A4%25E3%2581%258D%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ziva%2520Engine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M0MmY3NWM3MWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "複数AIレビューで、モデルと「何を見るか」を分けている",
-  "link": "https://zenn.dev/honabochi/articles/ai-review-votes-and-evidence",
-  "summary": "Codexに二つの役割を頼むと、違うことを言ってくれる。けれど、どこか親戚ぐらい似ている感じもある。 体感としては、二人というより1.5人ぐらい。人数を測った話ではなく、考え方の近さについての感覚です。 別の視点を借りたいので、必要な場面ではClaudeやGeminiも通しています。ただ、モデルを変えるだけで、欲しかった違いが出るとも限らない。 そこで、モデルを変えることと、何を見るかを決めることを、分けて考えるようにしています。 モデルと専門は固定しません。循環で見直すのは",
-  "date": "2026-11-04T12:36:59+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--n8L2FO5g--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25A4%2587%25E6%2595%25B0AI%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%25A7%25E3%2580%2581%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25A8%25E3%2580%258C%25E4%25BD%2595%25E3%2582%2592%25E8%25A6%258B%25E3%2582%258B%25E3%2581%258B%25E3%2580%258D%25E3%2582%2592%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NoBu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0RPbi1BR2dZVk1ZRUpfb2U1d3JxN0RuVGRCMkNEcTdFbnh3SHNJajBWZFlKYzVSND1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "ローカルLLM study9: 三値量子化Bonsai 2 27Bを、同条件のQwen3.8-27Bと並べて測り直す",
-  "link": "https://zenn.dev/tkpurine/articles/local-llm-study-009-bonsai2-ternary-custom-build",
-  "summary": "結論: 27Bの単発の回答では、三値量子化のBonsai 2(1.77bit/weight)は通常量子化のQwen3.8-27B(2.88bit/weight)に目立つ差を出さず、速度は約2.3〜2.8倍だった。ただし自律的な複数ステップ(monocoder)では三値が1/4、通常が3/4で、通常量子化に及ばない兆候があった。単発の差は各1回なので結論にしていない。 読者が得るもの: Ollamaで動かせない三値量子化モデルを専用llama.cppでビルドして動かす手順と、同",
-  "date": "2026-11-04T12:28:59+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--f5ClZ7DS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABLLM%2520study9%253A%2520%25E4%25B8%2589%25E5%2580%25A4%25E9%2587%258F%25E5%25AD%2590%25E5%258C%2596Bonsai%25202%252027B%25E3%2582%2592%25E3%2580%2581%25E5%2590%258C%25E6%259D%25A1%25E4%25BB%25B6%25E3%2581%25AEQwen3.8-27B%25E3%2581%25A8%25E4%25B8%25A6%25E3%2581%25B9%25E3%2581%25A6%25E6%25B8%25AC%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2597%25E3%2583%25AA%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvdC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "AIに設計をループで回させたら、検証60回・人間への確認73件だった話",
-  "link": "https://zenn.dev/neko_kawaii/articles/ba06d105b9e416",
-  "summary": "はじめに 要件から詳細設計までを AI にループで回させる仕組みを作り、検証用の題材で全10フェーズを1周しました。結果は、検証60回、人間への確認73件、前のフェーズへの差し戻し4回です。 もともと私は、要件から実装までの設計手順を Markdown の設計フレームワークとしてまとめていました。これを「AI が作り、別の AI が確かめ、人間が承認する」形に組み替えるために、Loop Engineering の考え方を参考に、10ステップの手順に落とし込んで進めました。 こ",
-  "date": "2026-11-04T12:28:19+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--UOdvFQG2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%2592%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%25A4%259C%25E8%25A8%25BC60%25E5%259B%259E%25E3%2583%25BB%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25B8%25E3%2581%25AE%25E7%25A2%25BA%25E8%25AA%258D73%25E4%25BB%25B6%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2586%25E3%2581%258D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pYbU0tZVFnaTRTc0VOdlJSY0FfeEY3aHlqTDdyeWJkcWtneEhUPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
- },
- {
-  "title": "AIにXの返信を任せたら、お礼を出さずに止まった —— 返してよい相手を「宛先」で決めておいた話",
-  "link": "https://zenn.dev/ai_shihan/articles/bee954a77035bb",
-  "summary": "私は副業の広報を、Claude Code の「広報部」の席に任せています。X の返信・いいね・フォローは、別の AI（Grok の Bot。社内では「X担当」と呼んでいます）が案を書き、PC の常駐の処理が専用のブラウザで出す形です。 11/4 の昼、ある投稿に付いた感想へ、X担当がお礼の返信の案を書きました。それが X に出るまでに、3回止まりました。2回は受け渡しの形のずれで、1回は決めておいた決まりどおりの止まり方です。どこで止まり、どう分けたかを書きます。 1回目：理",
-  "date": "2026-11-04T12:02:42+00:00",
-  "image": "https://res.cloudinary.com/zenn/image/upload/s--t-B5dZ9G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25ABX%25E3%2581%25AE%25E8%25BF%2594%25E4%25BF%25A1%25E3%2582%2592%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2581%258A%25E7%25A4%25BC%25E3%2582%2592%25E5%2587%25BA%25E3%2581%2595%25E3%2581%259A%25E3%2581%25AB%25E6%25AD%25A2%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2594%25E2%2580%2594%2520%25E8%25BF%2594%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2588%25E3%2581%2584%25E7%259B%25B8%25E6%2589%258B%25E3%2582%2592%25E3%2580%258C%25E5%25AE%259B%25E5%2585%2588%25E3%2580%258D%25E3%2581%25A7%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%25A6%25E3%2581%258A%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ai_shihan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-  "source": "Zenn (AI)",
-  "lang": "ja"
  },
  {
   "title": "Google hasn’t figured out how to make AI pay like its search engine",
