@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  models: read
   pages: write
   id-token: write
 jobs:
@@ -15,6 +16,13 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python3 ai_news.py --hours 24 --out docs --quiet || true
+      - run: pip install -q anthropic
+      - name: Generate daily summary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
+        run: python3 summarize.py --out docs || true
       - name: Commit digest
         run: |
           git config user.name github-actions

@@ -362,7 +362,7 @@ main{{max-width:960px;margin:0 auto;padding:16px 24px}}
 .badge{{display:inline-block;padding:1px 6px;border-radius:4px;background:var(--line);margin-right:6px}}
 </style></head><body>
 <header><h1>AIニュースダイジェスト</h1>
-<div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件</div>
+<div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件 · <a href="summary.html" style="color:var(--acc);text-decoration:none;font-weight:600">今日のAI動向まとめを読む →</a></div>
 <div class="tools"><input id="q" placeholder="キーワードで絞り込み" oninput="f()">
 <select id="src" onchange="f()"><option value="">すべてのソース</option>{src_opts}</select>
 <select id="lang" onchange="f()"><option value="">日本語+英語</option><option value="ja">日本語</option><option value="en">英語</option></select></div>

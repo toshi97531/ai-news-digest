@@ -21,11 +21,30 @@ python3 ai_news.py --no-images                      # 記事ページからの�
 | ファイル | 内容 |
 |---|---|
 | `docs/index.html` | 最新のダイジェスト。キーワード・ソース・言語で絞り込みできる |
+| `docs/summary.html` | AIが書いた「今日のAI動向まとめ」(summarize.py が生成) |
+| `docs/summary-YYYY-MM-DD.html` | まとめの日付つき保存版 |
 | `docs/digest-YYYY-MM-DD.html` | 日付つきの保存版 |
 | `docs/digest-YYYY-MM-DD.md` | Markdown版 (Obsidian / Notion などに貼る用) |
 | `docs/digest-YYYY-MM-DD.json` | 他ツール連携用の生データ |
 | `docs/translations.json` | 英語記事の翻訳キャッシュ (自動生成) |
 | `docs/images.json` | アイキャッチ画像URLのキャッシュ (自動生成) |
+
+## 今日のAI動向まとめ (summarize.py)
+
+収集した記事をもとに、LLMが「3行まとめ・主要トピック・分野別の動き」を日本語で書きます。
+
+```bash
+pip install anthropic                       # Claude を使う場合のみ
+ANTHROPIC_API_KEY=sk-ant-... python3 summarize.py
+```
+
+生成エンジンは上から順に試します:
+
+1. **Claude** (`ANTHROPIC_API_KEY` がある場合)。モデルは既定で `claude-opus-5-5`、環境変数 `SUMMARY_MODEL` で変更可 (例: `claude-haiku-5-5` で安価に)。
+2. **GitHub Models** (`GITHUB_TOKEN` がある場合)。GitHub Actions 内では追加設定なしで使え、無料。モデルは `SUMMARY_FALLBACK_MODEL` で変更可。
+
+どちらも使えない場合は見出し一覧だけのページを出します。
+GitHub Actions で Claude を使うには、リポジトリの Settings → Secrets and variables → Actions に `ANTHROPIC_API_KEY` を登録してください。
 
 ## フィードの追加・変更
 
