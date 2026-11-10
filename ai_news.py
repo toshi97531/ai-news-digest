@@ -238,6 +238,7 @@ def collect_one(feed: dict, since: dt.datetime, keywords: list[str]) -> tuple[di
             continue
         it["source"] = feed["name"]
         it["lang"] = feed.get("lang", "")
+        it["genre"] = feed.get("genre", "AI")
         it["summary"] = it["summary"][:240]
         out.append(it)
     return feed, out, None
@@ -317,13 +318,20 @@ def fmt_date(d: dt.datetime | None, tz: dt.tzinfo) -> str:
     return d.astimezone(tz).strftime("%m/%d %H:%M") if d else "--/-- --:--"
 
 
-def render_markdown(items: list[dict], errors: list[tuple[str, str]], now: dt.datetime, hours: int, tz) -> str:
+def render_markdown(items: list[dict], errors: list[tuple[str, str]], now: dt.datetime, hours: int, tz,
+                    genres: list[str] | None = None) -> str:
     lines = [f"# AIニュースダイジェスト {now.astimezone(tz):%Y-%m-%d %H:%M}",
              "", f"直近{hours}時間 / {len(items)}件", ""]
-    by_src: dict[str, list[dict]] = {}
-    for it in items:
-        by_src.setdefault(it["source"], []).append(it)
-    for src, its in by_src.items():
+    order = {g: i for i, g in enumerate(genres or [])}
+    by_src: dict[tuple[str, str], list[dict]] = {}
+    for it in sorted(items, key=lambda i: order.get(i.get("genre", "AI"), len(order))):
+        by_src.setdefault((it.get("genre", "AI"), it["source"]), []).append(it)
+    cur_genre = None
+    for (genre, src), its in by_src.items():
+        if genre != cur_genre:
+            lines.append(f"# {genre}")
+            lines.append("")
+            cur_genre = genre
         lines.append(f"## {src} ({len(its)})")
         for it in its:
             title = it.get("title_ja") or it["title"]
@@ -360,37 +368,52 @@ main{{max-width:960px;margin:0 auto;padding:16px 24px}}
 .src{{font-size:12px;color:var(--muted);margin-top:4px}} .sum{{font-size:13px;color:var(--muted);margin-top:6px}}
 .orig{{font-size:12px;color:var(--muted);margin-top:2px}} .hidden{{display:none}} footer{{color:var(--muted);font-size:12px;padding:16px 24px}}
 .badge{{display:inline-block;padding:1px 6px;border-radius:4px;background:var(--line);margin-right:6px}}
+.badge.genre{{background:#fde68a;color:#78350f}}
+.tabs{{margin-top:10px;display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}}
+.tab{{flex:0 0 auto;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);font-size:13px;cursor:pointer}}
+.tab small{{color:var(--muted)}} .tab.on{{background:var(--acc);border-color:var(--acc);color:#fff}} .tab.on small{{color:#fff}}
 </style></head><body>
 <header><h1>AIニュースダイジェスト</h1>
 <div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件 · <a href="summary.html" style="color:var(--acc);text-decoration:none;font-weight:600">今日のAI動向まとめを読む →</a></div>
 <div class="tools"><input id="q" placeholder="キーワードで絞り込み" oninput="f()">
 <select id="src" onchange="f()"><option value="">すべてのソース</option>{src_opts}</select>
 <select id="lang" onchange="f()"><option value="">日本語+英語</option><option value="ja">日本語</option><option value="en">英語</option></select></div>
+<div class="tabs">{tabs}</div>
 </header><main id="list">{items}</main>
 <footer>{errors}</footer>
 <script>
+let G='';function g(b){{G=b.dataset.g;for(const t of document.querySelectorAll('.tab'))t.classList.toggle('on',t===b);f()}}
 function f(){{const q=document.getElementById('q').value.toLowerCase(),s=document.getElementById('src').value,l=document.getElementById('lang').value;let n=0;
-for(const el of document.querySelectorAll('.item')){{const ok=(!q||el.textContent.toLowerCase().includes(q))&&(!s||el.dataset.src===s)&&(!l||el.dataset.lang===l);el.classList.toggle('hidden',!ok);if(ok)n++}}
+for(const el of document.querySelectorAll('.item')){{const ok=(!q||el.textContent.toLowerCase().includes(q))&&(!s||el.dataset.src===s)&&(!l||el.dataset.lang===l)&&(!G||el.dataset.genre===G);el.classList.toggle('hidden',!ok);if(ok)n++}}
 document.getElementById('count').textContent=n}}
 </script></body></html>"""
 
 
-def render_html(items: list[dict], errors, now, hours, tz) -> str:
+def render_html(items: list[dict], errors, now, hours, tz, genres: list[str] | None = None) -> str:
     e = html.escape
+    counts: dict[str, int] = {}
+    for it in items:
+        counts[it.get("genre", "AI")] = counts.get(it.get("genre", "AI"), 0) + 1
+    tabs = [f'<button class="tab on" data-g="" onclick="g(this)">すべて <small>{len(items)}</small></button>']
+    for gname in list(genres or []) + [x for x in counts if x not in (genres or [])]:
+        if counts.get(gname):
+            tabs.append(f'<button class="tab" data-g="{e(gname)}" onclick="g(this)">{e(gname)} <small>{counts[gname]}</small></button>')
     srcs = sorted({it["source"] for it in items})
     rows = []
     for it in items:
         rows.append(
-            f'<div class="item" data-src="{e(it["source"])}" data-lang="{e(it["lang"])}">'
+            f'<div class="item" data-src="{e(it["source"])}" data-lang="{e(it["lang"])}" data-genre="{e(it.get("genre", "AI"))}">'
             + (f'<a href="{e(it["link"])}" target="_blank" rel="noopener"><img class="thumb" src="{e(it["image"])}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"></a>' if it.get("image") else "")
             + f'<div class="body"><a href="{e(it["link"])}" target="_blank" rel="noopener">{e(it.get("title_ja") or it["title"])}</a>'
             + (f'<div class="orig">{e(it["title"])}</div>' if it.get("title_ja") else "")
-            + f'<div class="src"><span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
+            + f'<div class="src">'
+            + (f'<span class="badge genre">{e(it["genre"])}</span>' if it.get("genre", "AI") != "AI" else "")
+            + f'<span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
             + (f'<div class="sum">{e(it.get("summary_ja") or it["summary"])}</div>' if it["summary"] else "") + "</div></div>")
     err_html = ("取得失敗: " + " / ".join(f"{e(n)} ({e(m)})" for n, m in errors)) if errors else ""
     return HTML_TMPL.format(date=f"{now.astimezone(tz):%Y-%m-%d %H:%M}", hours=hours, n=len(items),
                             src_opts="".join(f'<option>{e(s)}</option>' for s in srcs),
-                            items="\n".join(rows), errors=err_html)
+                            items="\n".join(rows), errors=err_html, tabs="".join(tabs))
 
 
 # ---------------------------------------------------------------------------
@@ -408,8 +431,10 @@ def main(argv=None) -> int:
     a = p.parse_args(argv)
 
     feeds = DEFAULT_FEEDS
-    if a.feeds:
-        feeds = json.loads(Path(a.feeds).read_text(encoding="utf-8"))
+    feeds_path = Path(a.feeds) if a.feeds else Path(__file__).with_name("feeds.json")
+    if a.feeds or feeds_path.exists():
+        feeds = json.loads(feeds_path.read_text(encoding="utf-8"))
+    genres = list(dict.fromkeys(f.get("genre", "AI") for f in feeds))
     keywords = [k.strip() for k in a.keywords.split(",")] if a.keywords else DEFAULT_KEYWORDS
 
     tz = dt.datetime.now().astimezone().tzinfo
@@ -426,7 +451,7 @@ def main(argv=None) -> int:
                     print(f"  ! {feed['name']}: {err}", file=sys.stderr)
             else:
                 got.sort(key=lambda i: i["date"] or dt.datetime.min.replace(tzinfo=dt.timezone.utc), reverse=True)
-                items += got[: a.max_per_source]
+                items += got[: feed.get("max", a.max_per_source)]
                 if not a.quiet:
                     print(f"  ✓ {feed['name']}: {len(got)}件", file=sys.stderr)
 
@@ -444,12 +469,12 @@ def main(argv=None) -> int:
         if not a.quiet:
             print(f"  翻訳: {n}件 (新規)", file=sys.stderr)
     stamp = now.astimezone(tz).strftime("%Y-%m-%d")
-    (out / f"digest-{stamp}.md").write_text(render_markdown(items, errors, now, a.hours, tz), encoding="utf-8")
+    (out / f"digest-{stamp}.md").write_text(render_markdown(items, errors, now, a.hours, tz, genres), encoding="utf-8")
     (out / f"digest-{stamp}.json").write_text(
         json.dumps([{**i, "date": i["date"].isoformat() if i["date"] else None} for i in items],
                    ensure_ascii=False, indent=1), encoding="utf-8")
     html_path = out / "index.html"
-    html_path.write_text(render_html(items, errors, now, a.hours, tz), encoding="utf-8")
+    html_path.write_text(render_html(items, errors, now, a.hours, tz, genres), encoding="utf-8")
     (out / f"digest-{stamp}.html").write_text(html_path.read_text(encoding="utf-8"), encoding="utf-8")
 
     if not a.quiet:

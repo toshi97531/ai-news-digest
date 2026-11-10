@@ -192,7 +192,9 @@ def main(argv=None) -> int:
     if not src.exists():
         print(f"入力が見つかりません: {src}", file=sys.stderr)
         return 1
-    items = json.loads(src.read_text(encoding="utf-8"))[:MAX_ITEMS]
+    # AI以外のジャンル (教育・グルメなど) はAI動向まとめに含めない
+    items = [i for i in json.loads(src.read_text(encoding="utf-8"))
+             if i.get("genre", "AI") == "AI"][:MAX_ITEMS]
     prompt = build_prompt(items, date_str)
 
     md, engine = None, "なし"
