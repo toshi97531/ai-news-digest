@@ -19,6 +19,7 @@ import email.utils
 import html
 import json
 import os
+import random
 import re
 import sys
 import urllib.error
@@ -60,6 +61,25 @@ USER_AGENT = "Mozilla/5.0 (compatible; ai-news-digest/1.0)"
 NS = {"atom": "http://www.w3.org/2005/Atom", "dc": "http://purl.org/dc/elements/1.1/",
       "content": "http://purl.org/rss/1.0/modules/content/", "rss1": "http://purl.org/rss/1.0/",
       "media": "http://search.yahoo.com/mrss/"}
+
+
+def pick_rotating(feeds: list[dict], day: dt.date, count: int) -> list[dict]:
+    """"rotate": true のフィードから、その日の分を count 個選んで返す (それ以外はそのまま)。
+
+    候補をシャッフルした順に count 個ずつ日替わりで使い、全ジャンルを一巡するまで同じものは出さない。
+    一巡するごとに並び順を変えるので、組み合わせも毎回変わる。"""
+    fixed = [f for f in feeds if not f.get("rotate")]
+    pool = sorted((f for f in feeds if f.get("rotate")), key=lambda f: f["name"])
+    if not pool or count <= 0:
+        return fixed
+    count = min(count, len(pool))
+    days_per_cycle = max(1, len(pool) // count)
+    cycle, pos = divmod(day.toordinal(), days_per_cycle)
+    random.Random(cycle).shuffle(pool)
+    today = pool[pos * count:(pos + 1) * count]
+    for f in today:
+        f["today"] = True
+    return fixed + today
 
 
 # ---------------------------------------------------------------------------
@@ -239,6 +259,8 @@ def collect_one(feed: dict, since: dt.datetime, keywords: list[str]) -> tuple[di
         it["source"] = feed["name"]
         it["lang"] = feed.get("lang", "")
         it["genre"] = feed.get("genre", "AI")
+        if feed.get("rotate"):
+            it["rotate"] = True
         it["summary"] = it["summary"][:240]
         out.append(it)
     return feed, out, None
@@ -374,7 +396,7 @@ main{{max-width:960px;margin:0 auto;padding:16px 24px}}
 .tab small{{color:var(--muted)}} .tab.on{{background:var(--acc);border-color:var(--acc);color:#fff}} .tab.on small{{color:#fff}}
 </style></head><body>
 <header><h1>AIニュースダイジェスト</h1>
-<div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件 · <a href="summary.html" style="color:var(--acc);text-decoration:none;font-weight:600">今日のAI動向まとめを読む →</a></div>
+<div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件 · <a href="summary.html" style="color:var(--acc);text-decoration:none;font-weight:600">今日のまとめを読む (AI・ジャンル別) →</a></div>
 <div class="tools"><input id="q" placeholder="キーワードで絞り込み" oninput="f()">
 <select id="src" onchange="f()"><option value="">すべてのソース</option>{src_opts}</select>
 <select id="lang" onchange="f()"><option value="">日本語+英語</option><option value="ja">日本語</option><option value="en">英語</option></select></div>
@@ -395,9 +417,11 @@ def render_html(items: list[dict], errors, now, hours, tz, genres: list[str] | N
     for it in items:
         counts[it.get("genre", "AI")] = counts.get(it.get("genre", "AI"), 0) + 1
     tabs = [f'<button class="tab on" data-g="" onclick="g(this)">すべて <small>{len(items)}</small></button>']
+    rot = {it.get("genre") for it in items if it.get("rotate")}
     for gname in list(genres or []) + [x for x in counts if x not in (genres or [])]:
         if counts.get(gname):
-            tabs.append(f'<button class="tab" data-g="{e(gname)}" onclick="g(this)">{e(gname)} <small>{counts[gname]}</small></button>')
+            mark = '<span title="日替わりジャンル">🎲</span> ' if gname in rot else ""
+            tabs.append(f'<button class="tab" data-g="{e(gname)}" onclick="g(this)">{mark}{e(gname)} <small>{counts[gname]}</small></button>')
     srcs = sorted({it["source"] for it in items})
     rows = []
     for it in items:
@@ -427,6 +451,7 @@ def main(argv=None) -> int:
     p.add_argument("--open", action="store_true", help="生成後にHTMLをブラウザで開く")
     p.add_argument("--no-translate", action="store_true", help="英語記事の日本語翻訳をしない")
     p.add_argument("--no-images", action="store_true", help="記事ページからのアイキャッチ画像取得をしない")
+    p.add_argument("--rotate-count", type=int, default=3, help="日替わりジャンル (rotate: true) を1日にいくつ載せるか (既定: 3)")
     p.add_argument("--quiet", action="store_true")
     a = p.parse_args(argv)
 
@@ -434,12 +459,15 @@ def main(argv=None) -> int:
     feeds_path = Path(a.feeds) if a.feeds else Path(__file__).with_name("feeds.json")
     if a.feeds or feeds_path.exists():
         feeds = json.loads(feeds_path.read_text(encoding="utf-8"))
-    genres = list(dict.fromkeys(f.get("genre", "AI") for f in feeds))
     keywords = [k.strip() for k in a.keywords.split(",")] if a.keywords else DEFAULT_KEYWORDS
 
     tz = dt.datetime.now().astimezone().tzinfo
     now = dt.datetime.now(dt.timezone.utc)
     since = now - dt.timedelta(hours=a.hours)
+    feeds = pick_rotating(feeds, now.astimezone(tz).date(), a.rotate_count)
+    genres = list(dict.fromkeys(f.get("genre", "AI") for f in feeds))
+    if not a.quiet:
+        print("  今日の日替わりジャンル: " + " / ".join(f["genre"] for f in feeds if f.get("today")), file=sys.stderr)
 
     items: list[dict] = []
     errors: list[tuple[str, str]] = []
