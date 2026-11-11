@@ -1,0 +1,47 @@
+name: test-queries
+on:
+  push:
+    branches: [test-queries]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.parse, sys
+          sys.path.insert(0, ".")
+          import ai_news
+          H = lambda q: "https://b.hatena.ne.jp/q/" + urllib.parse.quote(q) + "?mode=rss&sort=recent&target=all"
+          C = {
+            "MarkeZine": "https://markezine.jp/rss/new/20/index.xml",
+            "Web担当者Forum": "https://webtan.impress.co.jp/rss.xml",
+            "Web担当者Forum2": "https://webtan.impress.co.jp/index.xml",
+            "ferret": "https://ferret-plus.com/feed",
+            "freee経営ハッカー": "https://keiei.freee.co.jp/feed",
+            "J-Net21": "https://j-net21.smrj.go.jp/rss/news.xml",
+            "ミラサポplus": "https://mirasapo-plus.go.jp/feed/",
+            "LINEヤフー for Business": "https://www.lycbiz.com/jp/feed/",
+            "販促会議/AdverTimes": "https://www.advertimes.com/feed/",
+            "ITmedia マーケティング": "https://rss.itmedia.co.jp/rss/2.0/marketing.xml",
+            "Unyoo": "https://unyoo.jp/feed/",
+            "ホットペッパーアカデミー(店舗)": "https://www.hotpepper.jp/ggs/feed/",
+            "はてブ: 教室運営": H("教室運営"),
+            "はてブ: 集客": H("集客"),
+            "はてブ: 個人事業主": H("個人事業主"),
+            "note: 教室運営": "https://note.com/hashtag/" + urllib.parse.quote("教室運営") + "/rss",
+            "note: 習い事教室": "https://note.com/hashtag/" + urllib.parse.quote("習い事教室") + "/rss",
+            "note: 集客": "https://note.com/hashtag/" + urllib.parse.quote("集客") + "/rss",
+          }
+          import datetime as dt
+          now = dt.datetime.now(dt.timezone.utc)
+          for name, url in C.items():
+              try:
+                  items = ai_news.parse_feed(ai_news.fetch(url, timeout=20))
+                  recent = [i for i in items if i["date"] and now - i["date"] < dt.timedelta(hours=48)]
+                  print(f"=== {name}: {len(items)}件 (48h以内 {len(recent)}件) {url}")
+                  for it in items[:6]:
+                      print("  -", (it["date"].strftime("%m/%d") if it["date"] else "--"), it["title"][:60])
+              except Exception as e:
+                  print(f"=== {name}: ERROR {type(e).__name__} {str(e)[:80]}")
+          PY
