@@ -19,6 +19,7 @@ import email.utils
 import html
 import json
 import os
+import random
 import re
 import sys
 import urllib.error
@@ -60,6 +61,25 @@ USER_AGENT = "Mozilla/5.0 (compatible; ai-news-digest/1.0)"
 NS = {"atom": "http://www.w3.org/2005/Atom", "dc": "http://purl.org/dc/elements/1.1/",
       "content": "http://purl.org/rss/1.0/modules/content/", "rss1": "http://purl.org/rss/1.0/",
       "media": "http://search.yahoo.com/mrss/"}
+
+
+def pick_rotating(feeds: list[dict], day: dt.date, count: int) -> list[dict]:
+    """"rotate": true のフィードから、その日の分を count 個選んで返す (それ以外はそのまま)。
+
+    候補をシャッフルした順に count 個ずつ日替わりで使い、全ジャンルを一巡するまで同じものは出さない。
+    一巡するごとに並び順を変えるので、組み合わせも毎回変わる。"""
+    fixed = [f for f in feeds if not f.get("rotate")]
+    pool = sorted((f for f in feeds if f.get("rotate")), key=lambda f: f["name"])
+    if not pool or count <= 0:
+        return fixed
+    count = min(count, len(pool))
+    days_per_cycle = max(1, len(pool) // count)
+    cycle, pos = divmod(day.toordinal(), days_per_cycle)
+    random.Random(cycle).shuffle(pool)
+    today = pool[pos * count:(pos + 1) * count]
+    for f in today:
+        f["today"] = True
+    return fixed + today
 
 
 # ---------------------------------------------------------------------------
@@ -238,6 +258,9 @@ def collect_one(feed: dict, since: dt.datetime, keywords: list[str]) -> tuple[di
             continue
         it["source"] = feed["name"]
         it["lang"] = feed.get("lang", "")
+        it["genre"] = feed.get("genre", "AI")
+        if feed.get("rotate"):
+            it["rotate"] = True
         it["summary"] = it["summary"][:240]
         out.append(it)
     return feed, out, None
@@ -317,13 +340,20 @@ def fmt_date(d: dt.datetime | None, tz: dt.tzinfo) -> str:
     return d.astimezone(tz).strftime("%m/%d %H:%M") if d else "--/-- --:--"
 
 
-def render_markdown(items: list[dict], errors: list[tuple[str, str]], now: dt.datetime, hours: int, tz) -> str:
+def render_markdown(items: list[dict], errors: list[tuple[str, str]], now: dt.datetime, hours: int, tz,
+                    genres: list[str] | None = None) -> str:
     lines = [f"# AIニュースダイジェスト {now.astimezone(tz):%Y-%m-%d %H:%M}",
              "", f"直近{hours}時間 / {len(items)}件", ""]
-    by_src: dict[str, list[dict]] = {}
-    for it in items:
-        by_src.setdefault(it["source"], []).append(it)
-    for src, its in by_src.items():
+    order = {g: i for i, g in enumerate(genres or [])}
+    by_src: dict[tuple[str, str], list[dict]] = {}
+    for it in sorted(items, key=lambda i: order.get(i.get("genre", "AI"), len(order))):
+        by_src.setdefault((it.get("genre", "AI"), it["source"]), []).append(it)
+    cur_genre = None
+    for (genre, src), its in by_src.items():
+        if genre != cur_genre:
+            lines.append(f"# {genre}")
+            lines.append("")
+            cur_genre = genre
         lines.append(f"## {src} ({len(its)})")
         for it in its:
             title = it.get("title_ja") or it["title"]
@@ -360,37 +390,54 @@ main{{max-width:960px;margin:0 auto;padding:16px 24px}}
 .src{{font-size:12px;color:var(--muted);margin-top:4px}} .sum{{font-size:13px;color:var(--muted);margin-top:6px}}
 .orig{{font-size:12px;color:var(--muted);margin-top:2px}} .hidden{{display:none}} footer{{color:var(--muted);font-size:12px;padding:16px 24px}}
 .badge{{display:inline-block;padding:1px 6px;border-radius:4px;background:var(--line);margin-right:6px}}
+.badge.genre{{background:#fde68a;color:#78350f}}
+.tabs{{margin-top:10px;display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}}
+.tab{{flex:0 0 auto;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);font-size:13px;cursor:pointer}}
+.tab small{{color:var(--muted)}} .tab.on{{background:var(--acc);border-color:var(--acc);color:#fff}} .tab.on small{{color:#fff}}
 </style></head><body>
 <header><h1>AIニュースダイジェスト</h1>
-<div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件 · <a href="summary.html" style="color:var(--acc);text-decoration:none;font-weight:600">今日のAI動向まとめを読む →</a></div>
+<div class="meta">{date} 生成 / 直近{hours}時間 / <span id="count">{n}</span>件 · <a href="summary.html" style="color:var(--acc);text-decoration:none;font-weight:600">今日のまとめを読む (AI・ジャンル別) →</a></div>
 <div class="tools"><input id="q" placeholder="キーワードで絞り込み" oninput="f()">
 <select id="src" onchange="f()"><option value="">すべてのソース</option>{src_opts}</select>
 <select id="lang" onchange="f()"><option value="">日本語+英語</option><option value="ja">日本語</option><option value="en">英語</option></select></div>
+<div class="tabs">{tabs}</div>
 </header><main id="list">{items}</main>
 <footer>{errors}</footer>
 <script>
+let G='';function g(b){{G=b.dataset.g;for(const t of document.querySelectorAll('.tab'))t.classList.toggle('on',t===b);f()}}
 function f(){{const q=document.getElementById('q').value.toLowerCase(),s=document.getElementById('src').value,l=document.getElementById('lang').value;let n=0;
-for(const el of document.querySelectorAll('.item')){{const ok=(!q||el.textContent.toLowerCase().includes(q))&&(!s||el.dataset.src===s)&&(!l||el.dataset.lang===l);el.classList.toggle('hidden',!ok);if(ok)n++}}
+for(const el of document.querySelectorAll('.item')){{const ok=(!q||el.textContent.toLowerCase().includes(q))&&(!s||el.dataset.src===s)&&(!l||el.dataset.lang===l)&&(!G||el.dataset.genre===G);el.classList.toggle('hidden',!ok);if(ok)n++}}
 document.getElementById('count').textContent=n}}
 </script></body></html>"""
 
 
-def render_html(items: list[dict], errors, now, hours, tz) -> str:
+def render_html(items: list[dict], errors, now, hours, tz, genres: list[str] | None = None) -> str:
     e = html.escape
+    counts: dict[str, int] = {}
+    for it in items:
+        counts[it.get("genre", "AI")] = counts.get(it.get("genre", "AI"), 0) + 1
+    tabs = [f'<button class="tab on" data-g="" onclick="g(this)">すべて <small>{len(items)}</small></button>']
+    rot = {it.get("genre") for it in items if it.get("rotate")}
+    for gname in list(genres or []) + [x for x in counts if x not in (genres or [])]:
+        if counts.get(gname):
+            mark = '<span title="日替わりジャンル">🎲</span> ' if gname in rot else ""
+            tabs.append(f'<button class="tab" data-g="{e(gname)}" onclick="g(this)">{mark}{e(gname)} <small>{counts[gname]}</small></button>')
     srcs = sorted({it["source"] for it in items})
     rows = []
     for it in items:
         rows.append(
-            f'<div class="item" data-src="{e(it["source"])}" data-lang="{e(it["lang"])}">'
+            f'<div class="item" data-src="{e(it["source"])}" data-lang="{e(it["lang"])}" data-genre="{e(it.get("genre", "AI"))}">'
             + (f'<a href="{e(it["link"])}" target="_blank" rel="noopener"><img class="thumb" src="{e(it["image"])}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"></a>' if it.get("image") else "")
             + f'<div class="body"><a href="{e(it["link"])}" target="_blank" rel="noopener">{e(it.get("title_ja") or it["title"])}</a>'
             + (f'<div class="orig">{e(it["title"])}</div>' if it.get("title_ja") else "")
-            + f'<div class="src"><span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
+            + f'<div class="src">'
+            + (f'<span class="badge genre">{e(it["genre"])}</span>' if it.get("genre", "AI") != "AI" else "")
+            + f'<span class="badge">{e(it["lang"]) or "-"}</span>{e(it["source"])} · {fmt_date(it["date"], tz)}</div>'
             + (f'<div class="sum">{e(it.get("summary_ja") or it["summary"])}</div>' if it["summary"] else "") + "</div></div>")
     err_html = ("取得失敗: " + " / ".join(f"{e(n)} ({e(m)})" for n, m in errors)) if errors else ""
     return HTML_TMPL.format(date=f"{now.astimezone(tz):%Y-%m-%d %H:%M}", hours=hours, n=len(items),
                             src_opts="".join(f'<option>{e(s)}</option>' for s in srcs),
-                            items="\n".join(rows), errors=err_html)
+                            items="\n".join(rows), errors=err_html, tabs="".join(tabs))
 
 
 # ---------------------------------------------------------------------------
@@ -404,17 +451,23 @@ def main(argv=None) -> int:
     p.add_argument("--open", action="store_true", help="生成後にHTMLをブラウザで開く")
     p.add_argument("--no-translate", action="store_true", help="英語記事の日本語翻訳をしない")
     p.add_argument("--no-images", action="store_true", help="記事ページからのアイキャッチ画像取得をしない")
+    p.add_argument("--rotate-count", type=int, default=3, help="日替わりジャンル (rotate: true) を1日にいくつ載せるか (既定: 3)")
     p.add_argument("--quiet", action="store_true")
     a = p.parse_args(argv)
 
     feeds = DEFAULT_FEEDS
-    if a.feeds:
-        feeds = json.loads(Path(a.feeds).read_text(encoding="utf-8"))
+    feeds_path = Path(a.feeds) if a.feeds else Path(__file__).with_name("feeds.json")
+    if a.feeds or feeds_path.exists():
+        feeds = json.loads(feeds_path.read_text(encoding="utf-8"))
     keywords = [k.strip() for k in a.keywords.split(",")] if a.keywords else DEFAULT_KEYWORDS
 
     tz = dt.datetime.now().astimezone().tzinfo
     now = dt.datetime.now(dt.timezone.utc)
     since = now - dt.timedelta(hours=a.hours)
+    feeds = pick_rotating(feeds, now.astimezone(tz).date(), a.rotate_count)
+    genres = list(dict.fromkeys(f.get("genre", "AI") for f in feeds))
+    if not a.quiet:
+        print("  今日の日替わりジャンル: " + " / ".join(f["genre"] for f in feeds if f.get("today")), file=sys.stderr)
 
     items: list[dict] = []
     errors: list[tuple[str, str]] = []
@@ -426,7 +479,7 @@ def main(argv=None) -> int:
                     print(f"  ! {feed['name']}: {err}", file=sys.stderr)
             else:
                 got.sort(key=lambda i: i["date"] or dt.datetime.min.replace(tzinfo=dt.timezone.utc), reverse=True)
-                items += got[: a.max_per_source]
+                items += got[: feed.get("max", a.max_per_source)]
                 if not a.quiet:
                     print(f"  ✓ {feed['name']}: {len(got)}件", file=sys.stderr)
 
@@ -444,12 +497,12 @@ def main(argv=None) -> int:
         if not a.quiet:
             print(f"  翻訳: {n}件 (新規)", file=sys.stderr)
     stamp = now.astimezone(tz).strftime("%Y-%m-%d")
-    (out / f"digest-{stamp}.md").write_text(render_markdown(items, errors, now, a.hours, tz), encoding="utf-8")
+    (out / f"digest-{stamp}.md").write_text(render_markdown(items, errors, now, a.hours, tz, genres), encoding="utf-8")
     (out / f"digest-{stamp}.json").write_text(
         json.dumps([{**i, "date": i["date"].isoformat() if i["date"] else None} for i in items],
                    ensure_ascii=False, indent=1), encoding="utf-8")
     html_path = out / "index.html"
-    html_path.write_text(render_html(items, errors, now, a.hours, tz), encoding="utf-8")
+    html_path.write_text(render_html(items, errors, now, a.hours, tz, genres), encoding="utf-8")
     (out / f"digest-{stamp}.html").write_text(html_path.read_text(encoding="utf-8"), encoding="utf-8")
 
     if not a.quiet:
