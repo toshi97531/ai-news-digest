@@ -249,6 +249,7 @@ def collect_one(feed: dict, since: dt.datetime, keywords: list[str]) -> tuple[di
     except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError) as e:
         return feed, [], f"{type(e).__name__}: {e}"
 
+    keywords = feed.get("keywords") or keywords  # フィードごとの絞り込み語があればそちらを使う
     kw_re = re.compile("|".join(re.escape(k) for k in keywords), re.IGNORECASE) if keywords else None
     out = []
     for it in entries:
