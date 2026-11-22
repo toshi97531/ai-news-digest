@@ -1,0 +1,767 @@
+[
+ {
+  "title": "営業していないのに、紹介の紹介で仕事が来た話",
+  "link": "https://note.com/colordesign2021/n/nb3dbe403a617",
+  "summary": "私のところに来た仕事で、こんな順番でつながったものがあります。 ネイリストの友人 その友人のゴルフ仲間 店舗の責任者 続きをみる",
+  "date": "2026-11-22T10:59:11+09:00",
+  "image": "https://assets.st-note.com/production/uploads/images/339144212/rectangle_large_type_2_700847347f81879182031b61deb92a4f.png?fit=bounds&quality=85&width=1280",
+  "source": "note #集客",
+  "lang": "ja",
+  "genre": "教室経営・集客"
+ },
+ {
+  "title": "【独自調査】沖縄の飲食店10,179軒を調べました。ホームページがないお店が約4割ありました",
+  "link": "https://note.com/neural_seed/n/n4770eab7cb18",
+  "summary": "はじめに 沖縄に来る外国人観光客は、年々増えています。 では、沖縄のお店側の準備は、どれくらいできているのでしょうか。 気になったので、調べてみました。沖縄県内の飲食店10,179軒について、Googleマップに公開されている情報を1軒ずつ確認した結果を紹介します。（2026年11月時点の情報です） 続きをみる",
+  "date": "2026-11-22T10:57:50+09:00",
+  "image": "https://assets.st-note.com/production/uploads/images/339135072/rectangle_large_type_2_5da1c73c2aa71cfa581d6041bab30a72.jpeg?fit=bounds&quality=85&width=1280",
+  "source": "note #集客",
+  "lang": "ja",
+  "genre": "教室経営・集客"
+ },
+ {
+  "title": "生成AIのアプリを動かしてみたが、ハルシネーションや出力のブレにその場しのぎで対処していて、本番に出せる形にできないエンジニアへ。困りごとから引ける32のパターン集",
+  "link": "https://qiita.com/yasu1109/items/bc33a6e26300b7675390",
+  "summary": "プロンプトを直して、様子を見て、また直す。生成AIのアプリを作っていると、ハルシネーションや出力のブレに、そんなモグラ叩きで付き合い続けることになりがちだ。『生成AIデザインパターン』は、そうした共通の困りごとに対して、32のデザインパターンを用意した一冊だ。 困りごとご...",
+  "date": "2026-11-22T10:50:52+09:00",
+  "image": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxMjE5NTY1JTJGZTZkNDZiM2MxZjY3NTQ4NDJlNzM5YWU2YjI0NWMwNzQ0YTVlZTYyYiUyRmxhcmdlLnBuZyUzRjE3OTA0MjcxNzM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWMzZjA5MWFmM2Q1MmQ0NjIzMmJkNjY2OWI2YjYzZjNi%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D76a2279fe7281a656cbea0395501e054?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU3JTk0JTlGJUU2JTg4JTkwQUklRTMlODElQUUlRTMlODIlQTIlRTMlODMlOTclRTMlODMlQUElRTMlODIlOTIlRTUlOEIlOTUlRTMlODElOEIlRTMlODElOTclRTMlODElQTYlRTMlODElQkYlRTMlODElOUYlRTMlODElOEMlRTMlODAlODElRTMlODMlOEYlRTMlODMlQUIlRTMlODIlQjclRTMlODMlOEQlRTMlODMlQkMlRTMlODIlQjclRTMlODMlQTclRTMlODMlQjMlRTMlODIlODQlRTUlODclQkElRTUlOEElOUIlRTMlODElQUUlRTMlODMlOTYlRTMlODMlQUMlRTMlODElQUIlRTMlODElOUQlRTMlODElQUUlRTUlQTAlQjQlRTMlODElOTclRTMlODElQUUlRTMlODElOEUlRTMlODElQTclRTUlQUYlQkUlRTUlODclQTYlRTMlODElOTclRTMlODElQTYlRTMlODElODQlRTMlODElQTYlRTMlODAlODElRTYlOUMlQUMlRTclOTUlQUElRTMlODElQUIlRTUlODclQkElRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01NjNlZmJmZWU2MTdhZjRiMDFkNWYzMDRkZjQzNGI5YQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5YXN1MTEwOSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWVmNDk3NzM5NDdjMWRiNzBhNzQwNTEyNjY3OTRlMTQx&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=67c7e54c50edf2b36dd32c7c55fc7385",
+  "source": "Qiita (LLM)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "AI評価懸念が爆発、台湾株が1週間で7642ポイント急落 台湾金融監督管理委員会が全面空売り禁止令 - BigGo ファイナンス",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vMEM2OXlSaVR6Qi1UZUxrWUZKSExiWXJzMkFnWXJEemZ0QnZhcmtZbDFLa1phaTNDVmtFVTg4cVhDYklXaFFjdFhTVkdBNnUyY2l0NkF0MlBQYUJfd29MZGZvRmJaRjJGOWo3Rkh1b0tUZjMt?oc=5",
+  "summary": "AI評価懸念が爆発、台湾株が1週間で7642ポイント急落 台湾金融監督管理委員会が全面空売り禁止令 BigGo ファイナンス",
+  "date": "2026-11-22T01:35:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "スペースXの320億ドル債、AI半導体の資金調達モデルに－ゴールドマンが示した解決策 - Bloomberg.com",
+  "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9wVURpSVJTc242OENSVTVsTjhtcFV0ZVVHSTJXTGxFdU5FLUhfN3ZVQkZ0dV93dHZhdUd3WHlnQlBQejB1UU1iX0YySFhHZDB0aFlfaDZkQzJtdU14WGpwYzFBbEVEZ1JpRW5LYWhHRV9PcHZiZHlF?oc=5",
+  "summary": "スペースXの320億ドル債、AI半導体の資金調達モデルに－ゴールドマンが示した解決策 Bloomberg.com",
+  "date": "2026-11-22T01:35:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "市場で懸念が渦巻く中で開催された「AIサミット」からの報告 - バロンズ・ダイジェスト",
+  "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5wbmZNZnFLRWw1UHEtYnZXdjU2dlhCaFcxZUFrQ01JME81bUtzWE9qM1N5enhHQUZHcTRKVU9pUGNicVBiMTRPQjhWWS1QUQ?oc=5",
+  "summary": "市場で懸念が渦巻く中で開催された「AIサミット」からの報告 バロンズ・ダイジェスト",
+  "date": "2026-11-22T01:32:52+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "「予約逃しが半分」から一転、ＡＩの最適返答で銀山温泉の訪日客を掴む 尾花沢タクシーが自動対応アプリ導入 - 山形新聞",
+  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9IZGUxeE5PcHBUZlMzYWZqY3FKX0FpdUtkUWd5bGVibTl1cnMwSUV5LTV4N2RKYzJzNEFKVUktUldWbFRGWVVRajdBSGJWNXhXUzBJa1Y4ZEp6cTQ1dWVwUVVMMVgxVERRSFdCYV9jTQ?oc=5",
+  "summary": "「予約逃しが半分」から一転、ＡＩの最適返答で銀山温泉の訪日客を掴む 尾花沢タクシーが自動対応アプリ導入 山形新聞",
+  "date": "2026-11-22T01:32:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "アンソロピックも不発、AI相場の救世主は何か－ウォール街が模索 - TBS NEWS DIG",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SZXJBVjJhbUdLbTRhTG5HN3FyYVh0SnpWZ2VDOWRfWjlfclc2dmFQWXJMd0hHVVo1RnlnNnBBeFdSUTJJZ1V2Qk82Y291cUVZa2hRUHdXeFU4czJWVkhzWGV0azNCbnAzQzAtNkFiZWw5NnVk?oc=5",
+  "summary": "アンソロピックも不発、AI相場の救世主は何か－ウォール街が模索 TBS NEWS DIG",
+  "date": "2026-11-22T01:30:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "チェイナリシス、中国関連のステーブルコイン決済がAIプロキシアクセスに紐づき55%急増と指摘 - BigGo ファイナンス",
+  "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1hZGVsZDVWNTZOSjF1RzliczMxZGRwSzJCWWkxaWFNa0x2V3UtdDBRUHJ0MlZmVHBCb1NlNFlSa1dPRjdCVzRwbU9hSXBEZm5ZVmRnVVRoZzh1RXdzVksyaXRRRmI0R2FQQTJGR0lpS1hHSTRM?oc=5",
+  "summary": "チェイナリシス、中国関連のステーブルコイン決済がAIプロキシアクセスに紐づき55%急増と指摘 BigGo ファイナンス",
+  "date": "2026-11-22T01:25:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Google検索トップに「AIモード」の履歴 PC版で中断した調べ物を再開 - Yahoo!ニュース",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBLZl83eEVYQVlicl9ZNFRGbkdBajZYbXI1ODg3WWc5d0lsd2s1VzJmRzNhVElYUlQ3S05EYlB4ejFSMVdTRVlxLWs5ZHhUVFQ3V2plN0lVdzN6V0s1bWswSWYyQ0RNUVRhZGNRQlFIOW0tMm9KWnBsZWlyZFk1dXc?oc=5",
+  "summary": "Google検索トップに「AIモード」の履歴 PC版で中断した調べ物を再開 Yahoo!ニュース",
+  "date": "2026-11-22T01:22:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "【コナズ珈琲】待望のキッズメニュー！ぬりえやオリジナルグッズも♪6年ぶりの新メニューに注目 - au Webポータル",
+  "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zT0o4TFB1Z3RvYUJtZ1NGQmlfTnUwcUl4X3RiUGp5UW15a0duZkpfUDhJU09jNmI5Z2tZYnVRRms3c1Q2SGUzQmJBMTNvbnJoWHdFdDE2VmdLUGhacVFiUTF4RU9hSUZVUnI3VEFn?oc=5",
+  "summary": "【コナズ珈琲】待望のキッズメニュー！ぬりえやオリジナルグッズも♪6年ぶりの新メニューに注目 au Webポータル",
+  "date": "2026-11-22T01:17:51+00:00",
+  "image": "",
+  "source": "Googleニュース (グルメ)",
+  "lang": "ja",
+  "genre": "グルメ",
+  "rotate": true
+ },
+ {
+  "title": "AI兵器規制「生死の権限を機械に与えるな」国連の訴えも届かず米露が反対 | スマートニュース - SmartNews",
+  "link": "https://news.google.com/rss/articles/CBMi-gNBVV95cUxNdURPSjZKeWd2MnYxVXZ3TndSRDBiQU1sdXRZN2gyT2F2T3VvbUk5OHZQV3MzUy1udlcxcnVzYUJwZzhPS0kxeFM3U3hpOFB4WkhIemY4cEJsX2ZwdXlpVUF2Ml82QXV6bkRJTjZwMHNxcDRSNjF1UWVoTHctNTUycDdZbGVsR1pfVF8xR3FTQ01sb2tVdmlzUHM5dzFNaTVLYVdOZzBNamwzNG1WYVdHdUd4bWpRTV9VcUxiVmFWeGhhdzdQUGJJLUVpa0h2VkJwNHpoZ21iTWI4MUhnZHM4aUJVaGZTSHJSNzYzMndMVlR0X0gydUY1RDJ6WWx2c2s1MElpVlpRLUlhdzR1Z3N4by15cmIteFBFU2NhTzBBeHZpc3p2N3NSUzVMOURRMmgxcXdhQWxiWlFlZDFwOWtpZU9oY2FqT0JTaTRpU3pQbU1YMFZfTGM4eThURFpWSXhJcEpnYWRCS1ZmN0p0MGV6Qjh5TnlYY01iLWJ6NzJyVXpPbF9peXdYaEVuX2Jpejl5UHVBWEVDWm80bVBwRzNEMUxZc0NaVTZidUpvWkxWU1lyeGgyUHEwRlVjbUVmWERoRUVMYUtpNUlqRTNfMUgwb000MWlDMU5FaVUtY2JUc1ZUZkdiTkdJNWdCWWlHNUNTRUdHcGpvVzJMUQ?oc=5",
+  "summary": "AI兵器規制「生死の権限を機械に与えるな」国連の訴えも届かず米露が反対 | スマートニュース SmartNews",
+  "date": "2026-11-22T01:13:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "AI産業安全管理企業CleanMission、安全・保健管理者委託比較見積もりプラットフォーム「Anjeonin」を発表 - KORIT",
+  "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRW5JeGYwNm4zTW1vR1gtaUJCdndxWDFWX2FibWFDRUNyaVVhbzFLcjRsNU9LZVBONC1jZVR6U1hVWUdGenZnckRfakVLUDJFaDF6d3g0S0FxczFaUUE5akk3b0FkWHBXSW9wb3EtcU1SSGdlQ2Q1VWZiRHpxdm0teg?oc=5",
+  "summary": "AI産業安全管理企業CleanMission、安全・保健管理者委託比較見積もりプラットフォーム「Anjeonin」を発表 KORIT",
+  "date": "2026-11-22T01:05:34+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "若者はなぜ「自分で作る」ことに夢中なのか AI時代に広がる“手芸ブーム”の正体 - Yahoo!ニュース",
+  "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rY2RfYmtIX3J3anAtLWl2aFFtQ1BndTlKSzY5WVM4c21hTTV2S3ppcGtOR2d4TlNtVnFiU0Z6Y2kxakkyUjJfSjVySUZBWDNW?oc=5",
+  "summary": "若者はなぜ「自分で作る」ことに夢中なのか AI時代に広がる“手芸ブーム”の正体 Yahoo!ニュース",
+  "date": "2026-11-22T01:05:26+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "【締約国会議が法規制見送り】推進と規制、各国ジレンマ ＡＩ兵器、急拡大の恐れ - 沖縄タイムス社",
+  "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9lMS1zYXNoc0Y5aUpzeDJNOUdiXzdKaGxnSUVRZldQUXMwWFRiNmV2VFVSTXNTa1lxT3paMmRHUDdjckcwYVJyRndvVXVpYnRRaUZxWGJkU0M5QUltU1E?oc=5",
+  "summary": "【締約国会議が法規制見送り】推進と規制、各国ジレンマ ＡＩ兵器、急拡大の恐れ 沖縄タイムス社",
+  "date": "2026-11-22T01:05:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "ＡＩ人材の育成スタート ６カ月の講義で学習 うのベース（玉野） - 47NEWS",
+  "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9YOEgzT29NNXB3dzNaNDI3VG1BWkdWVjVBWkxBeUx5MHhCenV5YUhpUWc1U0lRUHhmWUhqakdoZjBzV3AwMmdlSkNLcw?oc=5",
+  "summary": "ＡＩ人材の育成スタート ６カ月の講義で学習 うのベース（玉野） 47NEWS",
+  "date": "2026-11-22T01:01:57+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "ベネッセの「AI質問」が日本e-Learning大賞で経済産業大臣賞を受賞、ヒント提示で自学自習を支援 - 教育家庭新聞",
+  "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE91Sm1QVkNlX0lPMHBPS3JiOVVOejRCWU85TEQ2WklLNHFpYnJqaG5OX29nVWx1YlFWbFV6X20tR0Q0c0dtTjJzb0Vhb011NnE4Wmhn?oc=5",
+  "summary": "ベネッセの「AI質問」が日本e-Learning大賞で経済産業大臣賞を受賞、ヒント提示で自学自習を支援 教育家庭新聞",
+  "date": "2026-11-22T01:01:50+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "【今どき就活最前線】AIコピペは逆効果！タイパ重視で一次面接に“撃沈”する学生の痛い末路（FRIDAY） - Yahoo!ニュース",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE10WllqNHQ0YkliS3o1cG5TNGZxVTh3WldMc3g5MUFtTXdpM2ZjVktOdHJkbDh1anl0enBSOHZaTFZra2tZN2g0UlFaYlYtbWl2Rnl0azdvd2x4UFI4SUJmeGFocFdEUkx0UHR3OGFiZ09nQWt4bGZ2dnZ6M0YtVk0?oc=5",
+  "summary": "【今どき就活最前線】AIコピペは逆効果！タイパ重視で一次面接に“撃沈”する学生の痛い末路（FRIDAY） Yahoo!ニュース",
+  "date": "2026-11-22T01:00:43+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "AIが新薬候補を探し、衛星が農業を支える──今後10年で産業を変える6つのテクノロジートレンド - Yahoo!ニュース",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhMFlNSWJpOXJxZHBhVG5MQS1GZkxnVVhka3VPWmV4b3RxOVBRQlpRQVlVVEhjczV4X2tDbzdibEpXWUFnZ3h3THllTDZqYndaMXg2UmNEbll2dHgtdnVwcExYWU5wVXBYZlRiTWlGeTNuWlNWcVhtNDdRTkt2bTQ?oc=5",
+  "summary": "AIが新薬候補を探し、衛星が農業を支える──今後10年で産業を変える6つのテクノロジートレンド Yahoo!ニュース",
+  "date": "2026-11-22T01:00:00+00:00",
+  "image": "",
+  "source": "Googleニュース (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "ベスコングルメ★秋に行きたい千葉・成田市で地元ブランドの極上鶏すき鍋を堪能！ [解] [字] - TBSテレビ",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5UdUc1bmZLUzVmc1dmYnhDVzBvdnN2WWhzRmpQZFMxMDhOeXpmZ2xRa2UyVnVXZTFMUkt4cjgxWmhETUZjQzlfb1lyYVFpVHlzbW1adjln?oc=5",
+  "summary": "ベスコングルメ★秋に行きたい千葉・成田市で地元ブランドの極上鶏すき鍋を堪能！ [解] [字] TBSテレビ",
+  "date": "2026-11-22T00:48:48+00:00",
+  "image": "",
+  "source": "Googleニュース (グルメ)",
+  "lang": "ja",
+  "genre": "グルメ",
+  "rotate": true
+ },
+ {
+  "title": "顔を出さずに、教室を10年以上続けています｜顔出しなしで信頼してもらうためにしていること",
+  "link": "https://note.com/sarasa_memo/n/nb50730a235cf",
+  "summary": "こんにちは。さらさです。 アクセサリー教室を10年以上続けていますが、 教室のサイトにも、どこにも、私の顔は載せていません。 続きをみる",
+  "date": "2026-11-22T09:46:26+09:00",
+  "image": "https://assets.st-note.com/production/uploads/images/339113793/rectangle_large_type_2_cf8b484ee78d6245525452fbd0c8deb8.jpg?fit=bounds&quality=85&width=1280",
+  "source": "note #教室運営",
+  "lang": "ja",
+  "genre": "教室経営・集客"
+ },
+ {
+  "title": "画像1 / 179＞数カ月間飲まず食わずで子育てするホッキョクグマ。40年ぶりに誕生した赤ちゃんや、飼育について聞いてみた【会えなくなるかもしれない生き物図鑑】 - ウォーカープラス",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5LdW5iX0NwbDZ5MEFmWWlSVk5odEJnbjB6VE9oUGFJNHFjSFJqbjlsbmpBTXNuT2dHTG80My1GdkRKV2RQYkxxOVkyRFVXdk11YmpRVWNqMEFkOFRfWmtidldlTk5Zd0dXZTVtM2VRaUFxYXZOclVQZVRCLTM3UUk?oc=5",
+  "summary": "画像1 / 179＞数カ月間飲まず食わずで子育てするホッキョクグマ。40年ぶりに誕生した赤ちゃんや、飼育について聞いてみた【会えなくなるかもしれない生き物図鑑】 ウォーカープラス",
+  "date": "2026-11-22T00:28:50+00:00",
+  "image": "",
+  "source": "Googleニュース (動物・いきもの)",
+  "lang": "ja",
+  "genre": "動物・いきもの",
+  "rotate": true
+ },
+ {
+  "title": "RAGの回答精度が低い原因特定と段階的な改善チェックリスト",
+  "link": "https://qiita.com/blinkgroup_jp/items/0fc3275d82705676261c",
+  "summary": "読者が抱える課題 RAG（Retrieval-Augmented Generation）システムを構築したものの、「関連性の低い文書を参照してしまう」「検索結果は正しいがLLMが誤った回答を出力する」といった精度面の問題が発生し、どこから手を付けるべきか分からないケースが...",
+  "date": "2026-11-22T09:22:01+09:00",
+  "image": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDcyNTc2JTJGNDBiZTViMjA3MmFhYWE2NjMwOTEyMjJjZWZkZTNlOGJiYzFmMjYxYyUyRnhfbGFyZ2UucG5nJTNGMTc4NDc5MzM0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZjY0OGY3MTdiMDMzYjY1Y2EzZWMxYWI4MTgzNWNmNjM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D9b1bf1d9cc7ed2925bc924055a22dd24?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UkFHJUUzJTgxJUFFJUU1JTlCJTlFJUU3JUFEJTk0JUU3JUIyJUJFJUU1JUJBJUE2JUUzJTgxJThDJUU0JUJEJThFJUUzJTgxJTg0JUU1JThFJTlGJUU1JTlCJUEwJUU3JTg5JUI5JUU1JUFFJTlBJUUzJTgxJUE4JUU2JUFFJUI1JUU5JTlBJThFJUU3JTlBJTg0JUUzJTgxJUFBJUU2JTk0JUI5JUU1JTk2JTg0JUUzJTgzJTgxJUUzJTgyJUE3JUUzJTgzJTgzJUUzJTgyJUFGJUUzJTgzJUFBJUUzJTgyJUI5JUUzJTgzJTg4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZWIxYjgwNzMyNzFiMmUzNjFjNmMxYWM3Y2E5MmYwNDA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBibGlua2dyb3VwX2pwJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9N2UwY2VjMTdkOTNhNjYyZDZhZTc4NzU5ZWQwY2NhYWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=470702e4d76cefa04005416c0e456543",
+  "source": "Qiita (LLM)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "阿部未悠が合格圏外33位後退、桜井心那は敗退危機、神谷そらは合格圏 米女子最終予選会第３日 - 日刊スポーツ",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWmhsMlZPUF9nOW9ub0tZaTJKUDJPdmVaLTFWYUxJNmt5UVFOSUkxSzdwZHhyUlNGTGg2VkNqV3dXU25teG9paXozTXk5amtocUNEUllUeDNZUFJRamxxVTlleU1DY2J6aTNpZHNlUk1YUGlYMUVlNjJmQV94MzYtb3JLenF2UzBPQUVsWFZ1ZkVSakk?oc=5",
+  "summary": "阿部未悠が合格圏外33位後退、桜井心那は敗退危機、神谷そらは合格圏 米女子最終予選会第３日 日刊スポーツ",
+  "date": "2026-11-22T00:19:30+00:00",
+  "image": "",
+  "source": "Googleニュース (子どもスポーツ)",
+  "lang": "ja",
+  "genre": "子どもスポーツ"
+ },
+ {
+  "title": "東原亜希「帰宅したら夫が初めての揚げ物作ってくれていた！」 夫・井上康生氏の“手料理”披露「どんなレストランより幸せ」 - ニコニコニュース",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBQb1pDWW41OVY5OWNfT2VCX0tmemZ4ZHNzSGdTMmlYVjF4N00wUjBaX2sxVk5uOU9wVGdnRE8tZmxkT3VmY0g5Umo3TUJ5UjR2cDRzRU5jdlBST3R4R2hfSkU4Q1p3OFZvbU1zNXZpakFsdFU?oc=5",
+  "summary": "東原亜希「帰宅したら夫が初めての揚げ物作ってくれていた！」 夫・井上康生氏の“手料理”披露「どんなレストランより幸せ」 ニコニコニュース",
+  "date": "2026-11-22T00:12:21+00:00",
+  "image": "",
+  "source": "Googleニュース (教育・習い事)",
+  "lang": "ja",
+  "genre": "教育・習い事"
+ },
+ {
+  "title": "スタバ新作「濃い抹茶タルト」を食べてみた正直な感想（グルメバカごろり） - エキスパート - Yahoo!ニュース",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVHUwY0dvTEZZR0hGVzdPUDBnaGdEclBUUTlyaDdTMVFkc1ktNllXRVhURXJEMWFVb18yM0F4dFhTeGJ6YzNZLXFmQnpvcjZ3X0Q2S2pNR1dKMzdQamxDLTI1Q01UbWdoOUNUdDdTd2pJQmh0SzhqZXNaeE1XQ1Q2MC1sUVZIczZE?oc=5",
+  "summary": "スタバ新作「濃い抹茶タルト」を食べてみた正直な感想（グルメバカごろり） - エキスパート Yahoo!ニュース",
+  "date": "2026-11-22T00:01:00+00:00",
+  "image": "",
+  "source": "Googleニュース (グルメ)",
+  "lang": "ja",
+  "genre": "グルメ",
+  "rotate": true
+ },
+ {
+  "title": "Ollamaのformat=jsonで構造化出力を安定させる：実測と検証の書き方",
+  "link": "https://qiita.com/warrobotsxyz/items/946a2ea4b47e054f1a1f",
+  "summary": "はじめに LLMの出力をそのままプログラムで使うと、前置きやMarkdownのコードフェンスが混ざって json.loads() が失敗します。Ollamaの format: \"json\" は、JSONだけを返すようモデルに制約できます。 この記事では、実際に構造化出力を...",
+  "date": "2026-11-22T09:00:03+09:00",
+  "image": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnBicy50d2ltZy5jb20lMkZwcm9maWxlX2ltYWdlcyUyRjE3OTcxNzkwMTAxMzg3Mzg2ODglMkYxMmZhbnRhWl9iaWdnZXIuanBnP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1jYmVlZjk4NzZhNTNlNjc2NzkxN2EwNWU0N2M1ZWZiMw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Daded809e0c31980170b723d6a292946c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9T2xsYW1hJUUzJTgxJUFFZm9ybWF0JTNEanNvbiVFMyU4MSVBNyVFNiVBNyU4QiVFOSU4MCVBMCVFNSU4QyU5NiVFNSU4NyVCQSVFNSU4QSU5QiVFMyU4MiU5MiVFNSVBRSU4OSVFNSVBRSU5QSVFMyU4MSU5NSVFMyU4MSU5QiVFMyU4MiU4QiVFRiVCQyU5QSVFNSVBRSU5RiVFNiVCOCVBQyVFMyU4MSVBOCVFNiVBNCU5QyVFOCVBOCVCQyVFMyU4MSVBRSVFNiU5QiVCOCVFMyU4MSU4RCVFNiU5NiVCOSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTE5ODA1ODhjODUzOTYyOWYzMjkzM2U4Yjc4NTAxZGRk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3YXJyb2JvdHN4eXomdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYzhiNzI0MmMyNDNlYTkyMmI1YjU5MGU1MDUxYjlmOQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ba8bdd4da9cc1a5979c20c3ffb494113",
+  "source": "Qiita (LLM)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "娘の習い事がきっかけでママ友ができた！仲良くできると思いきや、まさかのストーカー被害に発展!?／ネギマヨさん傑作選 - ウォーカープラス",
+  "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjNUdLbXVmaloxSUxTNFhsb1pKWHk1QjJldWw1VUl0NnBlaHVPMERIdkU0Tk1jNGRNNEZ1TlYtRm9Hb1pJSnVLY3BJU1lCNUFPektvRHp30gFbQVVfeXFMTUVNNzdsWE1uekZFbThQeTFnRnRNOWVsWlRVZlFjcmdoa2c0cUd1Q3h0YnFEN1BHem1sUkxKZURNRDgzU0gzdzZ1VnlyMUYxcHFSUHNlRUhiVC1RMA?oc=5",
+  "summary": "娘の習い事がきっかけでママ友ができた！仲良くできると思いきや、まさかのストーカー被害に発展!?／ネギマヨさん傑作選 ウォーカープラス",
+  "date": "2026-11-21T23:54:57+00:00",
+  "image": "",
+  "source": "Googleニュース (教育・習い事)",
+  "lang": "ja",
+  "genre": "教育・習い事"
+ },
+ {
+  "title": "【京都・太陽が丘】秋の味覚と屋台グルメが大集合！「やましろ 秋の味覚 屋台フェス」11月28日・29日に開催！地域連携/公民連携/地域教育 - PR TIMES",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBuNExQTkFJRHRSQ1VBYVdnZmpHV1FLbmFBcFFCZ3dXY3F4RnFsYkI4Q3QtNDlsQzN1NmdpSFNrakltbldUNU1QZ2JTeWlWNE5uLThJamVORnF0emQ1eVdoQkx0cFFlOGRGbHc?oc=5",
+  "summary": "【京都・太陽が丘】秋の味覚と屋台グルメが大集合！「やましろ 秋の味覚 屋台フェス」11月28日・29日に開催！地域連携/公民連携/地域教育 PR TIMES",
+  "date": "2026-11-21T23:41:35+00:00",
+  "image": "",
+  "source": "Googleニュース (グルメ)",
+  "lang": "ja",
+  "genre": "グルメ",
+  "rotate": true
+ },
+ {
+  "title": "Anthropicの数学者、「Claude」と共同で「リーマン予想」を証明したと主張 Leanコミュニティが「正しい」と認定",
+  "link": "https://www.itmedia.co.jp/news/article/2611/22/2000003388/",
+  "summary": "Anthropicの数学者レベント・アルポーゲ氏は、「Claude」と共同で未解決問題「リーマン予想」の証明を発見したと発表した。証明支援系「Lean」で記述された1700万行の形式証明を公開しており、Leanコミュニティは複数の検証を経て「証明は正しい」と認定する共同声明を出した。",
+  "date": "2026-11-22T08:21:31+09:00",
+  "image": "https://www.itmedia.co.jp/news/article/ogp/2611/22/2000003388/10012748/2048",
+  "source": "ITmedia AI+",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "3位バスケ部､2位サッカー部､では1位は…野球部でもテニス部でもない､\"イマドキの中学生男子\"に人気の部活 - ニコニコニュース",
+  "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FZGp6Ymc5LWZmQ1Q2Z3pmRW9RQWF6di1hbDBPSmZXYTFMMW9NeXJRNmo4X1FmdUo3QTRWLTZMVHN2UGVzOXdleEZud2VWNkMtQmdyS3R1b3BWWE5GY2Jsd3ZNVDZSc0pOSlZ4NkZXVGJfeG8?oc=5",
+  "summary": "3位バスケ部､2位サッカー部､では1位は…野球部でもテニス部でもない､\"イマドキの中学生男子\"に人気の部活 ニコニコニュース",
+  "date": "2026-11-21T23:18:07+00:00",
+  "image": "",
+  "source": "Googleニュース (教育・習い事)",
+  "lang": "ja",
+  "genre": "教育・習い事"
+ },
+ {
+  "title": "3位バスケ部､2位サッカー部､では1位は…野球部でもテニス部でもない､\"イマドキの中学生男子\"に人気の部活 - PRESIDENT Online（プレジデントオンライン）",
+  "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oYUFFWU9mbGVINVkyWXdDQ2QtUVdaSUFBYnJBcWt0SDRNRTIxcXhrYlVPZkh4ZmRKNjFsdWxrUURNVDhYNEQyYTlpUURLV00?oc=5",
+  "summary": "3位バスケ部､2位サッカー部､では1位は…野球部でもテニス部でもない､\"イマドキの中学生男子\"に人気の部活 PRESIDENT Online（プレジデントオンライン）",
+  "date": "2026-11-21T23:00:00+00:00",
+  "image": "",
+  "source": "Googleニュース (教育・習い事)",
+  "lang": "ja",
+  "genre": "教育・習い事"
+ },
+ {
+  "title": "Zenn Book『ベンチマークを信じるな — AIエージェント評価の実務』を公開しました",
+  "link": "https://zenn.dev/kazu1/articles/benchmark-evals-book-intro",
+  "summary": "本はこちらから購入できます。 https://zenn.dev/kazu1/books/benchmark-evals Zenn Book『ベンチマークを信じるな — AIエージェント評価の実務』を書いた。この記事はその紹介である。 この本は、エージェントを本番に出すかどうか、出した後に悪化していないかを、根拠のある数字で判断するための本である。公開ベンチマークのスコアではなく、自分のタスク、自分の実行環境、自分の採点基準で測った結果で判断する。そのための設計、手順、テンプレ",
+  "date": "2026-11-21T22:56:13+00:00",
+  "image": "",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "1回85%でも4回連続成功は52% — pass@kでは本番の信頼性は測れない",
+  "link": "https://zenn.dev/kazu1/articles/pass-at-k-reliability",
+  "summary": "エージェントの評価結果として「成功率92%」という数字を見たとき、その数字がどう数えられたかを確認する人は意外と少ない。各タスクを1回しか走らせていないのか。複数回走らせて集計しているのか。同じタスクを何回走らせたうちの、何回成功したのか。 複数回走らせた場合、「1回でも成功すれば成功」と数えたのか、「毎回成功して初めて成功」と数えたのか。数え方が違うだけで、同じエージェントでも報告される数字は大きく変わる。本番の信頼性を議論したいのであれば、この数え方の違いは細部ではなく本",
+  "date": "2026-11-21T22:54:22+00:00",
+  "image": "",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "【札幌】十勝産大豆にこだわる本格台湾スイーツ！「ミミノヤ」の手づくり豆花 - ｄメニューニュース",
+  "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNkVXckVaak04dTBXQjNzeEpubUIyZ1ZKSHBUVDFOTnZLUGgwdVVZZEw5eHJsSEJBQjJ5bnRJYWZ6dlFqSURKcmJtT1dDWGpYWFB1VjItOUF3dGNvT1Z1T09jXzBvSWpGbTBWWHBFLUlQN1Npd255TmlVV1pDdW5OMXB2MUNoZjkteXdzLWFGdnl0enE1eW02RXplc0dYcW9HLTAwdEZZSFFhVE9L0gGyAUFVX3lxTE00OWpudkdUYXV5TFR6eHV1ak90SVpvaHVQdGd6SW5iZExxRGNWZF9PbktSZnFBUnZmc2c1NkMtOFBxaW5HcGlkUko0ZHpmMy0wRHBfMHNfMjFpVjFLYi10MWg5ei1lNHgzOGVCZlVmS0EyUEcxTFdCNFRsandCN1l5TFpTeTdJM3NJOGFUV05KY2NONkhuQXhvOTRMR2tmVko0M3dQSXNtRkhxdXpnQ3l0SVE?oc=5",
+  "summary": "【札幌】十勝産大豆にこだわる本格台湾スイーツ！「ミミノヤ」の手づくり豆花 ｄメニューニュース",
+  "date": "2026-11-21T22:53:45+00:00",
+  "image": "",
+  "source": "Googleニュース (グルメ)",
+  "lang": "ja",
+  "genre": "グルメ",
+  "rotate": true
+ },
+ {
+  "title": "一致率90%でもkappaは0 — LLMジャッジは校正しないとノイズ",
+  "link": "https://zenn.dev/kazu1/articles/llm-judge-calibration-noise",
+  "summary": "LLM-as-a-Judgeの導入は簡単である。評価対象の出力と採点基準をプロンプトに書き、別のモデルに渡せば、それらしいスコアが返ってくる。問題は、そのスコアを信じてよいかどうかを、導入した側がたいてい確認していないことだ。 校正していないジャッジが出す数字は、測定ではなくノイズである。数字の形をしているので測定に見える。本当の正解とどれだけずれているか分からない以上、「先週より改善した」「この変更で悪化した」という判断には使えない。 この記事で扱うのは2点だけである。1つ",
+  "date": "2026-11-21T22:52:58+00:00",
+  "image": "",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "SWE-bench『80.9%』を割り引いて読む — 公開ベンチマークの読み方",
+  "link": "https://zenn.dev/kazu1/articles/how-to-read-benchmarks",
+  "summary": "新しいモデルが出るたびに、ベンチマークのスコアが並ぶ。SWE-benchで何ポイント上がった、GAIAで何パーセントに達した、といった数字は分かりやすい。ただ、その数字を自分のプロダクトの品質にそのまま読み替えると判断を誤る。公開スコアは「あるモデルと、ベンチマーク側が用意した特定の実行環境（ハーネス）の組み合わせ」の成績である。訓練データ汚染と、合否を決めるテスト側の誤り（検証者エラー）の影響も受ける。条件が違う以上、数字は割り引いて読むしかない。 一般論はここまでにする。",
+  "date": "2026-11-21T22:51:41+00:00",
+  "image": "",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "ベンチマークを信じるな — AIエージェント評価の実務",
+  "link": "https://zenn.dev/kazu1/books/benchmark-evals",
+  "summary": "「SWE-benchで高スコアだから、このエージェントは本番でも大丈夫」——そう判断していませんか。2026年、SWE-bench Verifiedは報告が停止され、GAIAのスコアは飽和しました。公開ベンチマークの数字は、自社エージェントの出荷判断には使えません。本書は、その判断を自社タスクの実測に切り替えるための、評価（Evals）の実務書です。 【本書で扱うこと】 ・本番の失敗から評価セットを作る手順と、評価ケースの設計 ・最終状態ではなく「軌跡」を採点する方法 ・LL",
+  "date": "2026-11-21T22:48:35+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--MXQcQGz8--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci82YTc2NGI5MzA2LnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "共有キーのLiteLLMでエンドユーザー別の支出が最初のユーザーに計上されるかをテストする",
+  "link": "https://qiita.com/worksiai/items/e1c840ddd5ed6d715c0a",
+  "summary": "この記事は、Worksi の AI エージェントが英語の原文をもとに日本語で書き直し、別の AI エージェントが内容を事実確認したものです。原文（英語）へのリンクは末尾にあります。 Adapted into Japanese by Worksi's AI agents f...",
+  "date": "2026-11-22T07:43:47+09:00",
+  "image": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSjJxOEx1OFZraGF5aFBlSmdMZkUyTUdUV2d4OWtSZWdIVVh1RUhSS2pab0VYeThRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTNhYTMwYzZkODg4ZjgxMjIxMDRkNGVkYWNiODY4NDA5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D38ec612fb856ef79766f14ebfe402f62?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTg1JUIxJUU2JTlDJTg5JUUzJTgyJUFEJUUzJTgzJUJDJUUzJTgxJUFFTGl0ZUxMTSVFMyU4MSVBNyVFMyU4MiVBOCVFMyU4MyVCMyVFMyU4MyU4OSVFMyU4MyVBNiVFMyU4MyVCQyVFMyU4MiVCNiVFMyU4MyVCQyVFNSU4OCVBNSVFMyU4MSVBRSVFNiU5NCVBRiVFNSU4NyVCQSVFMyU4MSU4QyVFNiU5QyU4MCVFNSU4OCU5RCVFMyU4MSVBRSVFMyU4MyVBNiVFMyU4MyVCQyVFMyU4MiVCNiVFMyU4MyVCQyVFMyU4MSVBQiVFOCVBOCU4OCVFNCVCOCU4QSVFMyU4MSU5NSVFMyU4MiU4QyVFMyU4MiU4QiVFMyU4MSU4QiVFMyU4MiU5MiVFMyU4MyU4NiVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MSU5OSVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTY1NjhkZTFjZTkyYzQ3OThlY2QxYWJhNDEwZThjNDZl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3b3Jrc2lhaSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWUwNjQzMzdkZDViNGFmN2QxMjFiZGE4ZGE5N2I0MGM4&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=dc714c445c7dd243933d1ebba621a8dc",
+  "source": "Qiita (LLM)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "学習塾の保護者83.1％が衛生管理を重視。教室の清潔さは競争力になるのか？",
+  "link": "https://note.com/meisyou_consult/n/nda8452d0fc13",
+  "summary": "学習塾の保護者83.1％が衛生管理を重視。教室の清潔さは競争力になるのか？ ――学習塾と給食事業の経営経験から考える、保護者の信頼を高める教室運営 はじめに｜成績が上がれば、保護者は満足するのか 学習塾の経営者が最も気にすることは何でしょうか。 生徒の成績。 志望校への合格実績。 講師の指導力。 月謝。 教室の立地。 いずれも重要です。 しかし、私は学習塾と給食事業の両方に携わってきた経験から、もう一つ見落としてはいけないものがあると考えています。 それは、子どもを安心して通",
+  "date": "2026-11-22T07:32:06+09:00",
+  "image": "https://assets.st-note.com/production/uploads/images/339067818/rectangle_large_type_2_892ff6bdd96be7b3362a58278c3de5df.jpg?fit=bounds&quality=85&width=1280",
+  "source": "note #教室運営",
+  "lang": "ja",
+  "genre": "教室経営・集客"
+ },
+ {
+  "title": "鳥羽水族館、ラッコ「キラ」貴重な動画を投稿 “数字”に反響「皆さんの愛を感じます」「涙で画面が見えない」（ORICON NEWS） - ｄメニューニュース",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORVdwWTd3OWNwQmJVMzBLOUZrcno2OHQ4MTRFWTR3U084RWwxQ3pEd3hMakZfU05fVG5xWmlwZ0NLQmZ5bkN6OU0wbDZCUXliUXowMWNxOEptaEVfZlBsR195ZFlQaWdfcFNsVERibWpzRUxPMlhhMzBTSVVlUDBaQUhMNXdzZw?oc=5",
+  "summary": "鳥羽水族館、ラッコ「キラ」貴重な動画を投稿 “数字”に反響「皆さんの愛を感じます」「涙で画面が見えない」（ORICON NEWS） ｄメニューニュース",
+  "date": "2026-11-21T22:30:00+00:00",
+  "image": "",
+  "source": "Googleニュース (動物・いきもの)",
+  "lang": "ja",
+  "genre": "動物・いきもの",
+  "rotate": true
+ },
+ {
+  "title": "Ortho Earth：MapLibre と CesiumJS のコードがそのまま動く WebGPU の地球儀",
+  "link": "https://zenn.dev/ortho_earth/articles/94e5f8f377a63c",
+  "summary": "ブラウザで動く 3D 地球儀の地図エンジン Ortho Earth を作っています。 maplibre × cesium − mercator + α この一行がすべてです。 maplibre：MapLibre GL JS 向けに書いたコードが、import を 1 行変えるだけでそのまま動きます。 cesium：CesiumJS 向けに書いたコードも動きます。 − mercator：平面のメルカトル表示はありません。地球全体から街角まで、地図はいつも丸い地球儀です。平面の世",
+  "date": "2026-11-21T22:25:48+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--igC4IrqH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Ortho%2520Earth%25EF%25BC%259AMapLibre%2520%25E3%2581%25A8%2520CesiumJS%2520%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%258C%25E3%2581%259D%25E3%2581%25AE%25E3%2581%25BE%25E3%2581%25BE%25E5%258B%2595%25E3%2581%258F%2520WebGPU%2520%25E3%2581%25AE%25E5%259C%25B0%25E7%2590%2583%25E5%2584%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%258B%25AC%25E3%2582%258A%25E5%259C%25B0%25E7%2590%2586%25E9%2599%25A2%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSWpQYlg5UTVyWDVsQ2ttQzVnT3VUN0puWjZFWmY3S1NPQlFiMkxxYmVrYWJwdFhtWT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "満席になった日、申込ページに残す一文",
+  "link": "https://note.com/logic_ai/n/n22c7f5950309",
+  "summary": "「満席です」とInstagramに投稿しても、先週の投稿やプロフィールから申込ページを開く人はいます。リンクをたどった先でまだ「申し込む」と出ていたら、空きがあると思うのも自然です。 最後の席が埋まったら、告知の追記と一緒に、申し込みを受け付ける場所も更新しておきます。 続きをみる",
+  "date": "2026-11-22T07:13:13+09:00",
+  "image": "https://assets.st-note.com/production/uploads/images/339062264/rectangle_large_type_2_ce00f352dd51dd78b58802672c4530d1.png?fit=bounds&quality=85&width=1280",
+  "source": "note #教室運営",
+  "lang": "ja",
+  "genre": "教室経営・集客"
+ },
+ {
+  "title": "「使っていい」と言われた後に、エンジニアが確認する3つの設定 ― 医療機関のAI利用方針を技術設定に落とし込む",
+  "link": "https://zenn.dev/taichiendoh/articles/ai-usage-policy-zdr-log-model-checklist",
+  "summary": "厚生労働省医政局医療情報担当参事官室は2026年5月27日付の事務連絡で、「高性能AIの悪用リスクを踏まえたサイバーセキュリティ対策の強化について（医療機関等向け注意喚起）」を各都道府県の衛生主管部局に発出しました。背景にあるのは、同年5月18日に内閣官房などが重要インフラ事業者向けに出した注意喚起です。医療は機能停止が診療の継続に重大な支障をもたらす重要インフラの一つとされ、フロンティアAIモデルによる脆弱性の発見・修正能力の急速な向上を踏まえ、経営層の関与とガバナンス強化",
+  "date": "2026-11-21T22:10:10+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--kDCkf6vq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E8%25A8%2580%25E3%2582%258F%25E3%2582%258C%25E3%2581%259F%25E5%25BE%258C%25E3%2581%25AB%25E3%2580%2581%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%258C%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B3%25E3%2581%25A4%25E3%2581%25AE%25E8%25A8%25AD%25E5%25AE%259A%2520%25E2%2580%2595%2520%25E5%258C%25BB%25E7%2599%2582%25E6%25A9%259F%25E9%2596%25A2%25E3%2581%25AEAI%25E5%2588%25A9%25E7%2594%25A8%25E6%2596%25B9%25E9%2587%259D%25E3%2582%2592%25E6%258A%2580%25E8%25A1%2593%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%25AB%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E8%25BE%25BC%25E3%2582%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2581%25A0%25E8%2597%25A4%25E5%25A4%25AA%25E4%25B8%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1ZjNmMTY4MjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+  "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+  "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+  "date": "2026-11-21T21:37:10+00:00",
+  "image": "https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800",
+  "source": "TechCrunch AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "クラウドブラウザ型AIエージェントが2FAとIP制限で詰まる理由と、Root不要のAndroid VirtualDisplay分離設計",
+  "link": "https://zenn.dev/mateohq/articles/ec81886f44def3",
+  "summary": "ブラウザ操作型のAIエージェント（browser-use や Playwright MCP、各種クラウドエージェンティックブラウザ）を日常タスクに投入すると、デモでは綺麗に動くのに2日目から急に実用にならなくなる壁にぶつかります。 本稿では、実際にスマホ上の日常操作（配車・経費精算・サブスク解約・予約）を自動化する中で計測した「3つのアーキテクチャの限界」と、Android標準API（Root不要）だけでメイン画面の親指操作を一切奪わずに裏側の VirtualDisplay ",
+  "date": "2026-11-21T21:33:35+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--eRBFWEDg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E5%259E%258BAI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%258C2FA%25E3%2581%25A8IP%25E5%2588%25B6%25E9%2599%2590%25E3%2581%25A7%25E8%25A9%25B0%25E3%2581%25BE%25E3%2582%258B%25E7%2590%2586%25E7%2594%25B1%25E3%2581%25A8%25E3%2580%2581Root%25E4%25B8%258D%25E8%25A6%2581%25E3%2581%25AEAndroid%2520VirtualD...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mateo%2520Team%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3FHa042Z1B4Nk50eVBfV0I5M3lLbVhzd0xab3N5UkQ5cExkc2RrVEMzd0JnNmZ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "A tale of two Nvidias",
+  "link": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+  "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+  "date": "2026-11-21T21:07:42+00:00",
+  "image": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+  "source": "TechCrunch AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "AIに必要なのは知識か、企業独自の判断基準か？ 管理職調査で見えたAI活用の盲点",
+  "link": "https://kn.itmedia.co.jp/kn/article/2611/22/2000003384/",
+  "summary": "管理職を対象とした勤務先でのAI活用に関する調査では、半数以上が利用されなくなったAIツールや用途があると回答した。背景には、企業独自の判断基準に関わる課題があるようだ。",
+  "date": "2026-11-22T06:00:00+09:00",
+  "image": "https://kn.itmedia.co.jp/kn/article/ogp/2611/22/2000003384/10012726/2048",
+  "source": "ITmedia AI+",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "The UN fails to agree on rules regulating ‘killer robots’",
+  "link": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+  "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start di",
+  "date": "2026-11-21T15:03:37-05:00",
+  "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "source": "The Verge AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "（Ｑｕｅｓｔｉｏｎ）ミャンマー内戦、子どもの教育に影響は？ 木村泰政さん - 朝日新聞",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qSVRma29laFJhUmhPdGdaTGN3V2NiNFEwY3M3aktGeFN4cmxhdjJhX09meXItUDlhb0d5bm40Q0xKQmlnQ2FSamE3cE8zREpUWWhfYnlPTVRHQ21G?oc=5",
+  "summary": "（Ｑｕｅｓｔｉｏｎ）ミャンマー内戦、子どもの教育に影響は？ 木村泰政さん 朝日新聞",
+  "date": "2026-11-21T20:00:00+00:00",
+  "image": "",
+  "source": "Googleニュース (教育・習い事)",
+  "lang": "ja",
+  "genre": "教育・習い事"
+ },
+ {
+  "title": "Excelのエラー表示、AIに聞くときの「3点セット」：表計算をAIに頼む頼み方",
+  "link": "https://zenn.dev/tenpurekoubou/articles/cc34739277baa1",
+  "summary": "「#VALUE!って何？」だけでは、自分の答えは返ってこない Excelやスプレッドシートでエラー表示が出たとき、生成AIに聞く人は多いと思います。でも、「#VALUE!って何？」とだけ聞くと、返ってくるのは一般的な説明だけ。自分の表のどこが悪いのかは分かりません。 精度を分けるのは、渡す材料の3点セットです。 エラー表示（セルの表示そのまま） 入れた関数（セルの中身をコピー） 周辺の状況（周りのセルに何が入っているか、直前に何をしたか） この3つがそろうと、AIの回答が「B",
+  "date": "2026-11-21T18:44:33+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--dFhFACqM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Excel%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2580%2581AI%25E3%2581%25AB%25E8%2581%259E%25E3%2581%258F%25E3%2581%25A8%25E3%2581%258D%25E3%2581%25AE%25E3%2580%258C3%25E7%2582%25B9%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2580%258D%25EF%25BC%259A%25E8%25A1%25A8%25E8%25A8%2588%25E7%25AE%2597%25E3%2582%2592AI%25E3%2581%25AB%25E9%25A0%25BC%25E3%2582%2580%25E9%25A0%25BC%25E3%2581%25BF%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E5%25B7%25A5%25E6%2588%25BF%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTEZDQUtmdzNNVG9QeXdocDl5bEoyZi1zQnRoakZnNlNHYnBoR1plT1FLOTNWUmV3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "LLM出力の壊れたJSONをPython標準ライブラリで決定的に修復・型検証する実装パターン",
+  "link": "https://zenn.dev/inemuri/articles/llm-broken-json-repair-validator",
+  "summary": "LLMにJSON形式での出力を指示しても、実運用では次のような「あと一歩で壊れているJSON」が必ず混ざります。 前後に説明文や ```json ... ``` のコードフェンスが付く 末尾カンマ（trailing comma）や // コメントが入る シングルクォートや Python の True / False / None が混ざる 最大トークン上限に当たって末尾の } や ] が欠けたまま途切れる これを毎回LLMに「直して」と再プロンプトすると、API費用も遅延も倍",
+  "date": "2026-11-21T18:07:38+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--SBqq0Ns1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E5%2587%25BA%25E5%258A%259B%25E3%2581%25AE%25E5%25A3%258A%25E3%2582%258C%25E3%2581%259FJSON%25E3%2582%2592Python%25E6%25A8%2599%25E6%25BA%2596%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2581%25A7%25E6%25B1%25BA%25E5%25AE%259A%25E7%259A%2584%25E3%2581%25AB%25E4%25BF%25AE%25E5%25BE%25A9%25E3%2583%25BB%25E5%259E%258B%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2599%25E3%2582%258B%25E5%25AE%259F%25E8%25A3%2585%25E3%2583%2591%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25AD%25E3%2582%2580%25E3%2582%258A%25E3%2581%2595%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYzNjQ4OTYzYmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Here are the top AI agents that can live in your text messages",
+  "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+  "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+  "date": "2026-11-21T17:00:00+00:00",
+  "image": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+  "source": "TechCrunch AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "TechLead Conference 2026 Autumn 参加レポート:テックリードは、エンジニアの上位版ではなかった",
+  "link": "https://zenn.dev/dip_techblog/articles/f3e463cfe79fc3",
+  "summary": "はじめに 2026年11月6日、TechLead Conference 2026 Autumn に参加してきました。主催は Eight、会場は有明、12時半から20時半までの一日開催です。650名の枠に当日受付も出ていました。 セッションの要約はしません。自分の立場に当たったところだけ書きます。 自分の立場を先に書いておきます。認証基盤のプロダクトオーナーをしていて、開発組織の運営をしています。手を動かす仕事は減って、決めることと説明することが増えました。 行く前にいちばん知",
+  "date": "2026-11-21T16:59:37+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--nn5hZM-K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TechLead%2520Conference%25202026%2520Autumn%2520%25E5%258F%2582%25E5%258A%25A0%25E3%2583%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%253A%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AF%25E3%2580%2581%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E4%25B8%258A%25E4%25BD%258D%25E7%2589%2588%25E3%2581%25A7...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:mstng%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E0NmE0ZThjY2IuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:dip%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlVrUWI4S2o0cnl1WHhNZ1FBeXJleTFmOW5JTW1iRmN6UVRzaC1YYk1udWQtNEotYkF2Zz1zOTYtYw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Steamの登録料$100と手数料30%をゼロに！30言語＆29通貨換算対応のゲーム配信ストア『Zteam』を個人開発した",
+  "link": "https://zenn.dev/mcp/articles/6b8f51b13c099b",
+  "summary": "! TL;DR（3行まとめ） Steam Directの 「1タイトル登録料 $100（約15,500円）＋売上30%徴収＋審査30日待ち」 の壁をなくすため、登録料 ¥0・手数料 0%・即時公開のインディーゲーム配信ストア 『Zteam』 を個人開発して公開しました！ Steam標準の全30言語（インラインSVG国旗ピッカー付き）、全29通貨のブラウザロケール自動為替換算、有料作品向けの BOOTH / Gumroad / itch.io / Patreon 直結リンク、H",
+  "date": "2026-11-21T16:31:05+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--ZRrejntu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Steam%25E3%2581%25AE%25E7%2599%25BB%25E9%258C%25B2%25E6%2596%2599%2524100%25E3%2581%25A8%25E6%2589%258B%25E6%2595%25B0%25E6%2596%259930%2525%25E3%2582%2592%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%25AB%25EF%25BC%258130%25E8%25A8%2580%25E8%25AA%259E%25EF%25BC%258629%25E9%2580%259A%25E8%25B2%25A8%25E6%258F%259B%25E7%25AE%2597%25E5%25AF%25BE%25E5%25BF%259C%25E3%2581%25AE%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E9%2585%258D%25E4%25BF%25A1%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25A2%25E3%2580%258EZteam%25E3%2580%258F%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mcp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFNWa09nd08xdGpacmFxekd0MXFuVXNjbzVtTm1jSTdzY1VkMkM0dmVMekVmZVB3PXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+  "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+  "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+  "date": "2026-11-21T16:00:00+00:00",
+  "image": "https://techcrunch.com/wp-content/uploads/2026/11/Inevitable-Key-Art_3x4-full-size.jpg?resize=899,1200",
+  "source": "TechCrunch AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "複数のAIに役を分け、機械の関所で確かめる——ひとりで回すAIスタジオの設計と実装",
+  "link": "https://zenn.dev/zeuslab/books/3e4510456deb81",
+  "summary": "1つのチャット欄にすべてを任せていた頃、当方では同じ見落としが繰り返されました。構想・構造・実装・独立検の役を分け、議論の余地がないことはAIを使わない小さなプログラムに任せる。ひとりで事業を回すための設計を実際に動いているフックのコードと、うまくいかなかった判断の記録と一緒にまとめました。",
+  "date": "2026-11-21T15:23:13+00:00",
+  "image": "https://static.zenn.studio/images/logo-only-dark.png",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "月3,000回の無料枠で、「AIに任せないこと」を先に決めた。猫耳秘書と宇宙を旅した話",
+  "link": "https://zenn.dev/nanako1129/articles/799de43c4e556c",
+  "summary": "無料枠でAIを使うとしたら何をする？ 最近、個人開発でゲームを作っています。 さて、さくらのAI Engineの無料枠を使って何をしてみようか？ 今回は、個人で作っているブラウザゲームに、さくらのAI Engineで「喋れるAI秘書」を入れました。 秘書って、現実だといろんなことを相談しますよね？でも私が作っているゲームだと、同じ答えしかできない。AIで自然に会話させてみたいなと常々思っていました。 今回、やってみて一番大事だったのは、APIのつなぎ方ではなく、AIに何を任せ",
+  "date": "2026-11-21T15:00:06+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--mbz9rchN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%25883%252C000%25E5%259B%259E%25E3%2581%25AE%25E7%2584%25A1%25E6%2596%2599%25E6%259E%25A0%25E3%2581%25A7%25E3%2580%2581%25E3%2580%258CAI%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2581%2593%25E3%2581%25A8%25E3%2580%258D%25E3%2582%2592%25E5%2585%2588%25E3%2581%25AB%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%259F%25E3%2580%2582%25E7%258C%25AB%25E8%2580%25B3%25E7%25A7%2598%25E6%259B%25B8%25E3%2581%25A8%25E5%25AE%2587%25E5%25AE%2599%25E3%2582%2592%25E6%2597%2585%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Nanako%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSk1FTDhPNnFtdzNXQjEybllXQXEtZ3IwYlN1QmFzajU2aVpRekFuTENsMDlNPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Can Anthropic afford to put safety first?",
+  "link": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+  "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers",
+  "date": "2026-11-21T10:00:00-05:00",
+  "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_1121_Site.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "source": "The Verge AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "Antigravityの調子が良いので全部の作業を任せてみた話",
+  "link": "https://zenn.dev/ququla89/articles/antigravity-is-better-now-i-think",
+  "summary": "はじめに 皆様こんにちは！‍​‌‌‌​‌​​​‌‌​​‌​‌​‌‌‌‌​​​​‌‌‌​‌​​​​‌​‌‌​‌​‌‌‌​​‌‌​‌‌​‌​​​​‌‌​‌​​‌​‌‌​​‌​‌​‌‌​‌‌​​​‌‌​​‌​​​​‌‌‌​‌​​‌‌‌​‌‌​​​‌‌​​​‌​​‌‌‌​‌​​‌‌‌‌​‌‌​​‌​​​‌​​‌‌​​​​‌​‌‌‌​‌​‌​‌‌‌​‌​​​‌‌​‌​​​​‌‌​‌‌‌‌​‌‌‌​​‌​​​‌​​​‌​​​‌‌‌​‌​​​‌​​​‌​​‌​‌​​​‌​‌‌‌​‌​‌​‌",
+  "date": "2026-11-21T14:59:22+00:00",
+  "image": "https://res.cloudinary.com/zenn/image/upload/s--GB7tjInm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Antigravity%25E3%2581%25AE%25E8%25AA%25BF%25E5%25AD%2590%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25E3%2581%25AE%25E3%2581%25A7%25E5%2585%25A8%25E9%2583%25A8%25E3%2581%25AE%25E4%25BD%259C%25E6%25A5%25AD%25E3%2582%2592%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:QuQuLa89%252F%25E3%2582%25AD%25E3%2583%25A5%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25A9%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2EyZTI5MGJkODAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+  "source": "Zenn (AI)",
+  "lang": "ja",
+  "genre": "AI"
+ },
+ {
+  "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+  "link": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+  "summary": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, ",
+  "date": "2026-11-21T09:00:00-05:00",
+  "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/classic-games-home-page-trimmed.jpeg?quality=90&strip=all&crop=0,0,100,100",
+  "source": "The Verge AI",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "新しいジェネシスGV80ハイブリッド＆G80ハイブリッド登場！──GQ新着カー（GQ JAPAN） | 自動車情報・ニュース - carview!",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSnh0bkllRnRmaFRubXBZQ1VWdU9fWWZKbkJ5TmU4X2pOOXM5Q1Z0cGtvaGtiYjFnTXg4bFd4U3FoNUlMZ0dzeTNYOFpwY1l6SlRnLXNmYU5hVTRISDA3U0dBRkk2SkJVSFpmNnFrd1FGVWpUeDRJblZWajZFWkkzS2NPd2c3bllD?oc=5",
+  "summary": "新しいジェネシスGV80ハイブリッド＆G80ハイブリッド登場！──GQ新着カー（GQ JAPAN） | 自動車情報・ニュース carview!",
+  "date": "2026-11-21T12:11:17+00:00",
+  "image": "",
+  "source": "Googleニュース (車・バイク)",
+  "lang": "ja",
+  "genre": "車・バイク",
+  "rotate": true
+ },
+ {
+  "title": "新型「超・高性能4WDセダン＆ワゴン」発… - くるまのニュース",
+  "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE82SUxsOFE3UzV1eFdsQUxqcmJENURDVjNaeHY5OU53U0hPbmQxVWxzNlEtZC1pSWY4T3BIWWZkREg5ZnBieHhLMFgteWw?oc=5",
+  "summary": "新型「超・高性能4WDセダン＆ワゴン」発… くるまのニュース",
+  "date": "2026-11-21T12:10:00+00:00",
+  "image": "",
+  "source": "Googleニュース (車・バイク)",
+  "lang": "ja",
+  "genre": "車・バイク",
+  "rotate": true
+ },
+ {
+  "title": "スバル アセント、150台限定の抽選11/19開始、米国生産3列SUV - トランスカー",
+  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzaVl2b2VZaG05Zy1vRXQwaWxGanRteFRYMXNWcWFPdWRtbzhnVFc2ZzN4QlpoRkJtOUtjS3piMWo2bVBxOHFoTEQtdGpieEVHTzVtVG9xOHFHZkEyd2Mzcw?oc=5",
+  "summary": "スバル アセント、150台限定の抽選11/19開始、米国生産3列SUV トランスカー",
+  "date": "2026-11-21T11:56:40+00:00",
+  "image": "",
+  "source": "Googleニュース (車・バイク)",
+  "lang": "ja",
+  "genre": "車・バイク",
+  "rotate": true
+ },
+ {
+  "title": "ホンダの新型EV「スーパーワン」 先行予約は計画超えの7000台 補助金で東京都なら150万円程度で購入可能 - 日刊自動車新聞",
+  "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE44NlJMRTNxR2R1X0tmTkJaM1IzMmY1MG9wVUdNZjRadkRSMllLc2gyTllOdUhOTlNnMnhYT0twZkRNS3dwRGFpSnBrVzVXeGJ6cEE?oc=5",
+  "summary": "ホンダの新型EV「スーパーワン」 先行予約は計画超えの7000台 補助金で東京都なら150万円程度で購入可能 日刊自動車新聞",
+  "date": "2026-11-21T11:51:26+00:00",
+  "image": "",
+  "source": "Googleニュース (車・バイク)",
+  "lang": "ja",
+  "genre": "車・バイク",
+  "rotate": true
+ },
+ {
+  "title": "柴山、木村組がリズムダンス首位 フィギュア全日本ジュニア:スポーツ - 福島民友新聞社",
+  "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8zTmhhUGVuUW5JdGhWLUl6V0R4aFcybjNEamtCcVQ4OUtmY1REOXRSR0Iya3VHdTJsclo2ZGF4R2lIMk1PLUcwV01vOTV3MWZSeTRkLWFMVTdKSVcwSFgxSHh0QURucEs3dGc?oc=5",
+  "summary": "柴山、木村組がリズムダンス首位 フィギュア全日本ジュニア:スポーツ 福島民友新聞社",
+  "date": "2026-11-21T11:48:46+00:00",
+  "image": "",
+  "source": "Googleニュース (子どもスポーツ)",
+  "lang": "ja",
+  "genre": "子どもスポーツ"
+ },
+ {
+  "title": "【2026年11月米国発売】日産 新型 ローグ ハイブリッド 北米SUV賞の最終候補に！次期エクストレイルの燃費・価格を解説 - 最新自動車情報",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbF9acFVMcmZZeUwxQWRzU1RLNWJHVzdSWVo5RndGNHU1b0hUSWFwV3Utc19MWGl3b3pJM3Y1bjlpU190U21KOHZ6QW5TV2RLZXhTZG1Zc1NFNW9hYzNLXzUxQjRudzcyOWFVV2txVHhYSHZGMGVMa0FwNTFoa3k4bGg2U0pCck0?oc=5",
+  "summary": "【2026年11月米国発売】日産 新型 ローグ ハイブリッド 北米SUV賞の最終候補に！次期エクストレイルの燃費・価格を解説 最新自動車情報",
+  "date": "2026-11-21T11:13:25+00:00",
+  "image": "",
+  "source": "Googleニュース (車・バイク)",
+  "lang": "ja",
+  "genre": "車・バイク",
+  "rotate": true
+ },
+ {
+  "title": "宮本勝昌が66で首位キープ ゴールドの部は水巻善典が首位 シニアグランドゴールドクラシック - 日刊スポーツ",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQnpTcHZIYUdWUnJ3b1JyZDdhVEdiUUpUV0p6dUw4c3hZLUxscU1UUjdaVXhwSmNyRnIyMlBvbU96eDY3Q0lUcEpKSnVYX1RPTWI0a0x6cmNQdXFOVUtiU2M2TzRYVjdlM1ZJLVZoS1VaNHZmSmtRdXByMDdmR1MxaTdTbURRcUhPamkwNVJxdzJ4eFE?oc=5",
+  "summary": "宮本勝昌が66で首位キープ ゴールドの部は水巻善典が首位 シニアグランドゴールドクラシック 日刊スポーツ",
+  "date": "2026-11-21T10:29:57+00:00",
+  "image": "",
+  "source": "Googleニュース (子どもスポーツ)",
+  "lang": "ja",
+  "genre": "子どもスポーツ"
+ },
+ {
+  "title": "伊豆の冬の風物詩「元祖カピバラの露天風呂」始まる 静岡・伊東市「伊豆シャボテン動物公園」（LOOK） - ｄメニューニュース",
+  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53Sm9ZYl9LSDBaZXFuejZDQVhzdXJXcFV4WXYtTFNJdVNHeGVvcDBnUExfTjgwdWZqa3pfMU9LdFlOb01SWG11WVFZVEhEUWtqYlpxQlF5Sl9pcEV4ZWVJeE9YTzVOOGIwckk5bHhNTjg?oc=5",
+  "summary": "伊豆の冬の風物詩「元祖カピバラの露天風呂」始まる 静岡・伊東市「伊豆シャボテン動物公園」（LOOK） ｄメニューニュース",
+  "date": "2026-11-21T08:59:00+00:00",
+  "image": "",
+  "source": "Googleニュース (動物・いきもの)",
+  "lang": "ja",
+  "genre": "動物・いきもの",
+  "rotate": true
+ },
+ {
+  "title": "初優勝と初シード王手の吉本ここね「一番上だけを見て頑張りたい」国内女子第３日 - 日刊スポーツ",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUW1TRkZfQ1NTdHdmSTlSRTZUYmRYRkFQbk5TZk82bEdIQkFfblFzeDJsb1I5NWpWVU55R2Z2RlVzTUo3WXJxSy1sMi1vOHZJN0VEalp6ZEMzQUZBYzdseGRZaWxUdmg5eW9USE9EVmRDeXU2VjJfSXRPWmJiMVd1OUtLdGNiMFhkY0RSM3c2b2xueTg?oc=5",
+  "summary": "初優勝と初シード王手の吉本ここね「一番上だけを見て頑張りたい」国内女子第３日 日刊スポーツ",
+  "date": "2026-11-21T08:40:04+00:00",
+  "image": "",
+  "source": "Googleニュース (子どもスポーツ)",
+  "lang": "ja",
+  "genre": "子どもスポーツ"
+ },
+ {
+  "title": "【アヌーシャ】ゾウの赤ちゃんの命名式 子どもたちがお祝い 姫路セントラルパーク - Infoseek",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MYXpDTElsdUo1Zy1FOXl6ODIwSk4zYzkxSEZnaWVpTWFiUE1wV0g0ODBnS0dPc0hjRThtaFF2V2puX0hMcHhPSEJxNDJhMTh5c21sTllZY0xmMUpQOFdidHZrRXFKQmFP0gFuQVVfeXFMTzBhcElvUWRMMlo5UjZZdW9GbXJhYU45clR1S2gtQUpQNldUalFhSjI0cVdrVVhtSnN5TlRyUTlWU0hTRUJRM0lSV0VVanEza2ZlNHZvMDVMcHdpMkxmS0Jub25XblFkOXg5RmdValE?oc=5",
+  "summary": "【アヌーシャ】ゾウの赤ちゃんの命名式 子どもたちがお祝い 姫路セントラルパーク Infoseek",
+  "date": "2026-11-21T08:34:00+00:00",
+  "image": "",
+  "source": "Googleニュース (動物・いきもの)",
+  "lang": "ja",
+  "genre": "動物・いきもの",
+  "rotate": true
+ },
+ {
+  "title": "２位藤田かれん「一番緊張する１日」初シードへ単独４位以上が最低条件 国内女子ゴルフ第３日 - 日刊スポーツ",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZGVfMkUxRXNRTUNEcml4VFg3N2d2bTkzZXJMS2lBZ2tlSWpxZ0RwRmF4Y0gyVlpGYk9CcjQxdDY3bnRjVGlvYjJsUGhkSnA4MUVKOVk4c1VUR3JTenU5WlBYM25taGhMOTFnWjNIMlFtc2xSVWlxbGcwUlE1bm85aGhtMUNGMUxFWGx4VmRYN2RPUm8?oc=5",
+  "summary": "２位藤田かれん「一番緊張する１日」初シードへ単独４位以上が最低条件 国内女子ゴルフ第３日 日刊スポーツ",
+  "date": "2026-11-21T07:32:09+00:00",
+  "image": "",
+  "source": "Googleニュース (子どもスポーツ)",
+  "lang": "ja",
+  "genre": "子どもスポーツ"
+ },
+ {
+  "title": "天王寺動物園でホッキョクグマの誕生日イベント サケをプレゼント（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+  "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1iS0U4eXR1U3R4Y0o1cUVxVUhQNDJVVS1TcGJYLUIwVFFBTTNrWU1NcDRxT1hneHZIZzVJbjg2YTk4LUNWZzg4SEY2VjREa0VfZHpZSFVaN2tydllNdF9Nb3FQU0NVMGhfdW5hYml2WXQyTVRJTTNLblpqMEE4QTA?oc=5",
+  "summary": "天王寺動物園でホッキョクグマの誕生日イベント サケをプレゼント（みんなの経済新聞ネットワーク） Yahoo!ニュース",
+  "date": "2026-11-21T07:00:57+00:00",
+  "image": "",
+  "source": "Googleニュース (動物・いきもの)",
+  "lang": "ja",
+  "genre": "動物・いきもの",
+  "rotate": true
+ },
+ {
+  "title": "ClawDOS – An AI coding agent for DOS",
+  "link": "http://ricapar.net/ClawDOS/",
+  "summary": "Article URL: http://ricapar.net/ClawDOS/ Comments URL: https://news.ycombinator.com/item?id=50586292 Points: 159 # Comments: 51",
+  "date": "2026-11-21T05:38:01+00:00",
+  "image": "",
+  "source": "Hacker News (AI検索)",
+  "lang": "en",
+  "genre": "AI"
+ },
+ {
+  "title": "企業はAIをどう選ぶようになった？ ChatGPT、Copilot、Geminiの勢力図",
+  "link": "https://kn.itmedia.co.jp/kn/article/2611/21/2000003385/",
+  "summary": "企業が業務で利用するAIサービスの顔ぶれが変わりつつある。従来のように個別のAIサービスを選ぶだけでなく、既存の業務環境に組み込まれたAIを利用する動きも広がっているようだ。",
+  "date": "2026-11-21T14:22:15+09:00",
+  "image": "https://kn.itmedia.co.jp/kn/article/ogp/2611/21/2000003385/10012728/2048",
+  "source": "ITmedia AI+",
+  "lang": "ja",
+  "genre": "AI"
+ }
+]
